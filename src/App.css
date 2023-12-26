@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+html[data-theme='BASE']{
+  --textColor: #3F3F3F;
+  --textColorSecondary: #6F6248;
+  --accentColorText: #BFB195;
+  --titleColor: #595141;
+  --specialColorText:#000000;
+  --imageTextColor: #FFFFFF;
+
+  --accentColorBg: #BFB195;
+  --articleColorBg:#FAF8F4;
+  --backgroundColor: #FFFFFF;
+  --footerColorBg: #E4D9C3;
+  --headerColorBg: #02010100;
+
+  --socialSvgColor: #595141;
+  --btnIconColor: #818a91;
+}
