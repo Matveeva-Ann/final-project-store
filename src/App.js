@@ -1,9 +1,8 @@
 import './fonts/fonts.css'
-import './App.css';
-import Bunner from 'components/Bunner/Bunner';
-
+import './App.css'
+import AppRoutes from './AppRoutes'
 export default function App() {
   return (
-   <Bunner/>
+    <AppRoutes></AppRoutes>
   );
 }
