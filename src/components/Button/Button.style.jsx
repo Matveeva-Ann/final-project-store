@@ -1,16 +1,18 @@
 import styled from "@emotion/styled";
 
-export const ButtonBunner=styled.button`
-     width: 192px;
+export const ButtonStyle=styled.button`
+     width: 133px;
   height: 48px;
-  padding: 16px 20px;
+  padding: 12px 24px;
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid var(--accentColorText);
-  color:var(--accentColorText);
+  border: 2px solid var(--accentColorText); 
+  background:var(--accentColorText);
+  color:#FFFF;
+  font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
   margin: 5px;
-  font-family: Roboto;
 `
