@@ -6,6 +6,7 @@ export const PublicInfo = styled.div`
     display: flex;
     align-items: center;
     background-color: var(--articleColorBg);
+    margin-bottom: 130px;
 `
 export const PublicityImg=styled.img`
 object-position:cover;

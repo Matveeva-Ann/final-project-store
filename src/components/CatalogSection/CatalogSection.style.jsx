@@ -29,7 +29,7 @@ export const CatalogItem=styled.div`
 `
 export const TextOverlayFour=styled.div`
    position: absolute;
-  bottom: 3%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -43,7 +43,7 @@ export const TextOverlayFour=styled.div`
 `
 export const TextOverlayOne=styled.div`
    position: absolute;
-  bottom: 3%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -57,7 +57,7 @@ export const TextOverlayOne=styled.div`
 `
 export const TextOverlayTwo=styled.div`
    position: absolute;
-  bottom: 3%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
