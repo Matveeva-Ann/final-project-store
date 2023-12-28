@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const ButtonStyle=styled.button`
-     width: 133px;
+     width: auto;
   height: 48px;
   padding: 12px 24px;
   justify-content: center;
@@ -15,4 +15,8 @@ export const ButtonStyle=styled.button`
     font-size: 20px;
     font-weight: 500;
   margin: 5px;
+  :hover{
+    background: #FFF;
+    color:var(--accentColorText);
+  }
 `
