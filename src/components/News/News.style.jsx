@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const NewsWrapper=styled.div`
    text-align:center;
-   padding-bottom: 140px;
+   padding-bottom: 130px;
 `
  export const TitleNews=styled.h2`
     /* margin :0 auto !important; не відцентровує текст */

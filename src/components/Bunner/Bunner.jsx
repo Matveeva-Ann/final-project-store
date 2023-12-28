@@ -7,7 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation'; 
 import 'swiper/css/pagination'; 
 import {Swiper,SwiperSlide} from 'swiper/react';
-import { Navigation, Pagination, EffectCoverFlow } from 'swiper';
+// import { Navigation, Pagination, EffectCoverFlow } from 'swiper';
 // import SwiperSlide
 
 import swiper1 from "../../icons/swiper1.png" 
