@@ -1,6 +1,6 @@
+import './fonts/fonts.css';
 import './App.css';
-import AppRoutes from './AppRoutes';
-import './i18n/i18n.js';
+import AppRoutes from './AppRoutes'
 
 export default function App() {
   return (
