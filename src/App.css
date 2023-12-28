@@ -37,18 +37,18 @@
   }
 }
 
-html[data-theme='BASE']{
-  --textColor: #3F3F3F;
-  --textColorSecondary: #6F6248;
-  --accentColorText: #BFB195;
+html[data-theme='BASE'] {
+  --textColor: #3f3f3f;
+  --textColorSecondary: #6f6248;
+  --accentColorText: #bfb195;
   --titleColor: #595141;
-  --specialColorText:#000000;
-  --imageTextColor: #FFFFFF;
+  --specialColorText: #000000;
+  --imageTextColor: #ffffff;
 
-  --accentColorBg: #BFB195;
-  --articleColorBg:#FAF8F4;
-  --backgroundColor: #FFFFFF;
-  --footerColorBg: #E4D9C3;
+  --accentColorBg: #bfb195;
+  --articleColorBg: #faf8f4;
+  --backgroundColor: #ffffff;
+  --footerColorBg: #e4d9c3;
   --headerColorBg: #02010100;
 
   --socialSvgColor: #595141;
