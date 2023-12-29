@@ -53,4 +53,7 @@ html[data-theme='BASE'] {
 
   --socialSvgColor: #595141;
   --btnIconColor: #818a91;
-}
+
+  --nuvHoverStyle: #55595c;
+  --nuvDropDownHover: #494c4f;
+
