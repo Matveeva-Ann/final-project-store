@@ -2,10 +2,10 @@ import './CatalogSection.style'
 import { TitleNews } from '../News/News.style'
 import {CatalogWrapper,CatalogGrid,CatalogItem,Image,TextOverlayOne, TextOverlayTwo, TextOverlayThree, TextOverlayFour} from './CatalogSection.style'
 import Button from 'components/Button/Button'
-import Basket from '../../icons/basket.jpg'
-import Vase from '../../icons/vase.jpg'
-import Textile from '../../icons/textile.jpg'
-import Forkitchen from '../../icons/forkitchen.jpg'
+import Basket from '../../img/basket.jpg'
+import Vase from '../../img/vase.jpg'
+import Textile from '../../img/textile.jpg'
+import Forkitchen from '../../img/forkitchen.jpg'
 function CatalogSection() {
     return (
         <CatalogWrapper>

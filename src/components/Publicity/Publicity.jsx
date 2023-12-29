@@ -1,5 +1,5 @@
 import { Post, TitleTwo} from '../Bunner/Bunner.style'
-import Public from "../../icons/public.png";
+import Public from "../../img/public.png";
 import  {PublicityImg,PublicInfo,PublicInline} from "./Publicity.style"
 
 function Publicity() {

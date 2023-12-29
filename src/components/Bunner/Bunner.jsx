@@ -1,7 +1,7 @@
 import React from "react"
 import {Title,TitleTwo,Post,BunnerImg ,BunnerSection,BunnerFlex,BunnerPost, SwiperPrev, SwiperNext} from "./Bunner.style.jsx"
 import Button from "components/Button/Button.jsx"
-import Bunnerbg from "../../icons/bunnerbg.png"
+import Bunnerbg from "../../img/bunnerbg.png"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow'; 
 import 'swiper/css/navigation'; 
@@ -10,9 +10,9 @@ import {Swiper,SwiperSlide} from 'swiper/react';
 // import { Navigation, Pagination, EffectCoverFlow } from 'swiper';
 // import SwiperSlide
 
-import swiper1 from "../../icons/swiper1.png" 
-import swiper2 from "../../icons/swiper2.jpg" 
-// import swiper3 from "../../icons/swiper3.webp" 
+import swiper1 from "../../img/swiper1.png" 
+import swiper2 from "../../img/swiper2.jpg" 
+
 
 function Bunner() {
     // const swiper = new Swiper();
