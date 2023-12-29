@@ -1,7 +1,8 @@
-import i18next from './i18n';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { enTranslations, uaTranslations } from './locale';
+import uaTranslations from 'i18n/locale/uaTranslations';
+import enTranslations from 'i18n/locale/enTranslations';
 
 const translations = {
   uk: uaTranslations,
@@ -9,14 +10,14 @@ const translations = {
 };
 
 const initI18n = async () => {
-  await i18next
+  await i18n
     .use(initReactI18next)
     .use(LanguageDetector)
     .init({
-      fallbackLng: 'en',
+      fallbackLng: 'uk',
       debug: true,
       resources: translations
     });
 };
 
-export default initI18n().then(() => i18next);
+export default initI18n().then(() => i18n);

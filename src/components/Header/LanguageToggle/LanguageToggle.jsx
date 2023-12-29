@@ -1,28 +1,19 @@
-
-// import i18next from '../../../i18n';
-// import '../../../i18n';
+import 'i18n/i18n';
 import { useTranslation } from 'react-i18next';
-import { FlagSpan, OptionEn, Select, Wrapper } from './LanguageToggle.styled';
-// import flagUa from './icons/ukraine.svg';
-// import flagUk from './icons/united-kingdom.svg';
-// import { goodsApi, useGetAllGoodsQuery } from 'redux/api';
-// import { useEffect } from 'react';
-// import { urlGoodsEn } from 'constants/urlGoodsCollection';
+import { FlagSpan, Select, Wrapper } from './LanguageToggle.styled';
 
 export default function LanguageToggle() {
-  const { t, i18n } = useTranslation();
-
-  console.log(i18n.language);
-
+  const { i18n } = useTranslation();
   function handleChangeLanguage(e) {
-    const newLanguage = i18n.language = e.target.value || 'uk';
+    const newLanguage = e.target.value || 'uk';
     i18n.changeLanguage(newLanguage);
   }
+
   return (
     <Wrapper>
-      {/* <FlagSpan img={i18n.language}></FlagSpan> */}
-      <FlagSpan img={'uk'}></FlagSpan>
-      <Select onChange={handleChangeLanguage} defaultValue={i18n.language}>
+      <label htmlFor="language-select" aria-label="Select Language"></label>
+      <FlagSpan img={i18n.language} arial-label='flag'></FlagSpan>
+      <Select id="language-select" onChange={handleChangeLanguage} value={i18n.language || 'uk'}>
         <option value="en">EN</option>
         <option value="uk">UA</option>
       </Select>
