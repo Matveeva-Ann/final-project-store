@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const NavStyle = styled.nav`
   display: flex;
   padding: 5px 0;
-  @media (width < 1100px) {
+  @media (width < 1150px) {
     display: none;
   }
 `;
@@ -70,7 +70,7 @@ export const NuvLinkStyle = styled(NavLink)`
 //DropDown style
 
 export const NavDropDownWrapper = styled.div`
-  @media (width > 1100px) {
+  @media (width > 1150px) {
     display: none;
   }
   position: absolute;
@@ -83,10 +83,7 @@ export const NavDropDownWrapper = styled.div`
   transition:
     top 400ms linear,
     visibility 250ms ease-in-out;
-`;
-
-export const NavDropDownStyle = styled.nav`
-  width: 100%;
+  z-index: 2;
 `;
 
 export const NavListDropDown = styled.ul`
@@ -95,28 +92,22 @@ export const NavListDropDown = styled.ul`
   margin: 0;
 `;
 
-export const NuvItemDropDown = styled.li`
-  width: 100%;
-`;
-
 export const NuvLinkDropDown = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
   color: var(--textColor);
   font-size: 20px;
   padding: 10px 20px;
-  width: calc(100% - 40px);
   transition: background-color 200ms linear;
   padding-left: 13%;
 
   &:hover {
-    background-color: var(--nuvDropDownHover);
-    color: var(--imageTextColor);
+    opacity: 0.6;
   }
 
   &.active {
-    background-color: var(--nuvDropDownHover);
-    color: var(--imageTextColor);
+    font-weight: 600;
+    font-size: 25px;
   }
   @media (width < 770px) {
     padding-left: 5%;

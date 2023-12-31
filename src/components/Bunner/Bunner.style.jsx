@@ -1,60 +1,91 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const BunnerSection=styled.div`
-    margin-bottom: 150px;
-    padding:0 13%;
-`
-export const BunnerFlex=styled.div`
-    display:flex;
-    align-items: center;
-`
-export const BunnerPost=styled.div`
-    display:block;
-`
-export const Title=styled.h1`
-    margin:0 auto;
-    color: var(--accentColorText) ;
-    font-family: "Cormorant Garamond";
-    font-size: 6vw;
-    font-style: inherit;
-    font-weight: 400;
-    line-height: 120px;
-    opacity: 0.2;
-    position:absolute;
-    z-index: 2;
-    
-`
-export const TitleTwo=styled.h2`
-        color:var(--titleColor);
-         /* color: red; */
-    font-family: "Montserrat", Sans-serif;
-    font-size: 44px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 60px;
-    padding: 100px 0 40px;
-    margin: 0;
-`
-export const Post=styled.p`
-    color:var(--textColorSecondary);
-    font-family: "Montserrat", Sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    margin:0 0 20px;
-`
-export const BunnerImg=styled.img`
-    position: relative;
-    width: auto;
-    height: auto;
-object-position: 50% 50%;
-  /* top: 60px; */
-    /* align-content: flex-start; */
-   
+export const BunnerSection = styled.section`
+  margin: 50px 0 150px;
+`;
 
-`
-export const SwiperNext=styled.div`
-    border: 2px solid red ;
-`
+export const Title = styled.h1`
+  position: absolute;
+  color: var(--accentColorText);
+  font-family: 'CormorantGaramond';
+  font-size: 6vw;
+  font-style: inherit;
+  font-weight: 400;
+  line-height: 120px;
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 400;
+  top: 0px;
+  z-index: 1;
+  @media (width < 1025) {
+    font-size: 7.4vw;
+    top: -15px;
+  }
+`;
+
+export const BunnerFlex = styled.div`
+  display: flex;
+  align-items: stretch;
+  @media (width < 1025px) {
+    flex-direction: column;
+  }
+`;
+export const BunnerPost = styled.div`
+  padding-right: 40px;
+  padding-top: 80px;
+  @media (width < 1025px) {
+    order: 2;
+  }
+`;
+export const TitleTwo = styled.h2`
+  color: var(--titleColor);
+  padding: 0px 0 40px;
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 60px;
+  margin: 0;
+`;
+
+export const Post = styled.p`
+  color: var(--textColorSecondary);
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 20px;
+`;
+export const BunnerImg = styled.img`
+  position: relative;
+  width: 57%;
+  object-position: 50% 50%;
+  object-fit: cover;
+  display: grid;
+  height: auto;
+  @media (width < 1025px) {
+    order: 1;
+    width: 100%;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  gap: 35px;
+  align-items: stretch;
+  @media (width < 1025px) {
+    flex-direction: column;
+  }
+`;
+
+export const SwiperNext = styled.div`
+  /* border: 2px solid red; */
+`;
 // export const SwiperPrev=styled.div`
 //     border: 2px solid red ;
 // `
+
+export const WrapperSlideFirst = styled.div`
+  padding-top: 50px;
+`

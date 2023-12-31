@@ -8,6 +8,9 @@ const uaTranslations = {
       "blog": 'Блог',
       "deliveryPayment": 'Доставка і оплата',
       "findUs": 'Де нас знайти?'
+    },
+    slideFirst:{
+      "title": "Зробимо твій будинок затишним!"
     }
   }
 }
