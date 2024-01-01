@@ -13,12 +13,34 @@
   line-height: 1;
   animation: fall linear infinite;
   z-index: 100;
-
+}
+.snowflake2 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  animation: fall2 linear infinite;
+  z-index: 100;
 }
 
 @keyframes fall {
   0% {
     transform: translateY(-100vh);
+  }
+  50% {
+    transform: translateX(20vw);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fall2 {
+  0% {
+    transform: translateY(-100vh);
+  }
+  50% {
+    transform: translateX(-20vw);
   }
   100% {
     transform: translateY(100vh);
