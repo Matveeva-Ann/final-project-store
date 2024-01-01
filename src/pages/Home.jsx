@@ -11,7 +11,6 @@ export default function Home() {
       <News></News>
       <CatalogSection></CatalogSection>
       <Publicity></Publicity>
-     
     </>
   );
 }

@@ -1,6 +1,6 @@
 import './News.style'
 import {TitleNews,NewsWrapper} from '../News/News.style'
-import Button from 'components/Button/Button'
+import Button from 'components/Buttons/Button/Button'
 
 function News() {
     return (

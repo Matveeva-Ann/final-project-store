@@ -6,7 +6,7 @@ import { lazy, Suspense, useState } from 'react';
 import { useSelector } from 'react-redux';
 import authSelectors from '../../redux/auth/auth-selectors';
 import { generateLoggedInMarkup, generateLoggedOutMarkup } from './helpers';
-import IconButton from 'constants/IconButton/IconButton';
+import IconButton from 'components/Buttons/IconButton/IconButton';
 
 const NavDropDownComponent = lazy(() => import('../Navigation/NavDropDown'));
 

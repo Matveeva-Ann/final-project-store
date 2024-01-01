@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { NavDropDownStyle, NavDropDownWrapper, NavListDropDown, NuvItem, NuvItemDropDown, NuvLinkDropDown, NuvLinkStyle } from './Navigation.style';
+import { NavDropDownWrapper, NavListDropDown, NuvLinkDropDown } from './Navigation.style';
 import { navItems } from './NavItems';
 
 export default function NavDropDown({isOpenDropDown, setIsOpenDropDown}) {
@@ -7,15 +7,15 @@ export default function NavDropDown({isOpenDropDown, setIsOpenDropDown}) {
 
   return (
     <NavDropDownWrapper isOpenDropDown={isOpenDropDown}>
-      <NavDropDownStyle>
+      <nav>
         <NavListDropDown>
           {navItems.map(item => (
-            <NuvItemDropDown key={item.name}>
+            <li key={item.name}>
               <NuvLinkDropDown to={item.link} onClick={()=>setIsOpenDropDown(false)}>{t(`header.${item.name}`)}</NuvLinkDropDown>
-            </NuvItemDropDown>
+            </li>
           ))}
         </NavListDropDown>
-      </NavDropDownStyle>
+      </nav>
     </NavDropDownWrapper>
   );
 }

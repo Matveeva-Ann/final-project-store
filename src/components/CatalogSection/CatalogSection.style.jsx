@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 
-export const CatalogWrapper=styled.div`
+export const CatalogWrapper=styled.section`
      text-align:center;
-     padding:0 13%;
    margin-bottom: 130px;
 `
 export const Image=styled.img`

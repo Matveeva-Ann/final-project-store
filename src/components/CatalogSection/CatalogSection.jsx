@@ -1,7 +1,7 @@
 import './CatalogSection.style'
 import { TitleNews } from '../News/News.style'
 import {CatalogWrapper,CatalogGrid,CatalogItem,Image,TextOverlayOne, TextOverlayTwo, TextOverlayThree, TextOverlayFour} from './CatalogSection.style'
-import Button from 'components/Button/Button'
+import Button from 'components/Buttons/Button/Button'
 import Basket from '../../img/basket.jpg'
 import Vase from '../../img/vase.jpg'
 import Textile from '../../img/textile.jpg'

@@ -8,6 +8,9 @@ const enTranslations = {
       "blog": "Blog",
       "deliveryPayment": "Delivery and Payment",
       "findUs": "Where to Find Us?",
+    },
+    slideFirst:{
+      "title": "Let's make your home cozy!"
     }
   }
 

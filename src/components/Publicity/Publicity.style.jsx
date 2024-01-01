@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 
 export const PublicInfo = styled.div`
-    padding: 0 13%;
     display: flex;
     align-items: center;
     background-color: var(--articleColorBg);
