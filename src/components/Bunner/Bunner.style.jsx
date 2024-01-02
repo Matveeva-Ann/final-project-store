@@ -28,6 +28,7 @@ export const Title = styled.h1`
 
 export const BunnerFlex = styled.div`
   display: flex;
+  gap:50px 25px;
   align-items: stretch;
   @media (width < 1025px) {
     flex-direction: column;
@@ -63,7 +64,9 @@ export const Post = styled.p`
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
   line-height: 30px;
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
+  text-align: center;
+ margin:auto;
   @media (width<1025px){
     /* display:none; */
     /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */

@@ -5,6 +5,7 @@ import {
   BunnerSection,
   BunnerFlex,
   TitleSlide,
+  Post,
 } from './Bunner.style.jsx';
 
 import 'swiper/css';
@@ -49,20 +50,24 @@ const { t } = useTranslation();
                 src={swiper1}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
+                style={{ width: 'auto', height: '540px', paddingTop:'50px' }}
               />
               <TitleTwo>{t('slideFirst.title')}</TitleTwo>
             </TitleSlide>
           </SwiperSlide>
           <SwiperSlide>
             <TitleSlide>
+              <BunnerFlex>
               <img
                 src={swiper2}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
+                style={{ width: 'auto', height: '540px' }}
               />
+                <Post>{t('slideFirst.textSlideTree')}</Post>
+              </BunnerFlex>
               <TitleTwo>{t('slideFirst.title')}</TitleTwo>
+              
             </TitleSlide>
           </SwiperSlide>
         </Swiper>
