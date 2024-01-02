@@ -3,21 +3,36 @@ import styled from "@emotion/styled";
 export const CatalogWrapper=styled.section`
      text-align:center;
    margin-bottom: 130px;
+   
 `
 export const Image=styled.img`
   display: block;
-  width: 277px;
-  height: 500px;
+  height: 340px;
   transition: box-shadow 0.3s ease;
   :hover{
-     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+     /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); */
+         filter: brightness(0.5); 
   }
    
 `
 export const CatalogGrid = styled.div`
-  display:flex;
-  gap:10px ;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:5px ;
   padding-bottom:70px;
+  width: fit-content;
+  margin: 0 auto;
+   @media (width<1025px){
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    width: fit-content;
+  
+   }
+    @media (width<480px){
+      margin: 0 auto;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+   }
 `
 export const CatalogItem=styled.div`
    position: relative;
@@ -35,9 +50,7 @@ export const TextOverlayFour=styled.div`
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
 `
 export const TextOverlayOne=styled.div`
@@ -49,9 +62,7 @@ export const TextOverlayOne=styled.div`
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
 `
 export const TextOverlayTwo=styled.div`
@@ -63,22 +74,18 @@ export const TextOverlayTwo=styled.div`
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
 `
 export const TextOverlayThree=styled.div`
    position: absolute;
-  bottom: 3%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 3px;
   font-family: "Montserrat", Sans-serif;
 `

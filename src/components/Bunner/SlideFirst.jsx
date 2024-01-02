@@ -12,11 +12,7 @@ export default function SlideFirst() {
       <BunnerFlex>
         <BunnerPost>
           <TitleTwo>{t('slideFirst.title')}</TitleTwo>
-          <Post>
-            Наш магазин декору та подарунків пропонує товари провідних світових брендів, які приємно як дарувати так і
-            отримувати. Ми з радістю допоможемо вам обрати, незвичні подарунки на будь-яке свято. Ви можете купити
-            подарунок в нашому магазинів або замовити он-лайн з доставкою по Україні.
-          </Post>
+          <Post>{t('slideFirst.text') }</Post>
           <ButtonWrapper>
             <LinkButton link='/shop'> Каталог</LinkButton>
             <LinkButton buttonStyle='transparent' link='/actions'>Акції</LinkButton>

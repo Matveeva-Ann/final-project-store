@@ -46,6 +46,7 @@ export const TitleTwo = styled.h2`
   font-style: normal;
   line-height: 60px;
   margin: 0;
+   
 `;
 
 export const Post = styled.p`
@@ -54,6 +55,10 @@ export const Post = styled.p`
   font-size: 20px;
   line-height: 30px;
   margin: 0 0 20px;
+  @media (width<1025px){
+    /* display:none; */
+    /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */
+  }
 `;
 export const BunnerImg = styled.img`
   position: relative;

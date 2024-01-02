@@ -1,18 +1,11 @@
 import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import {
-  Title,
   TitleTwo,
-  Post,
-  BunnerImg,
   BunnerSection,
   BunnerFlex,
-  BunnerPost,
-  SwiperPrev,
-  SwiperNext,
 } from './Bunner.style.jsx';
-import Button from 'components/Buttons/Button/Button.jsx';
-import Bunnerbg from '../../img/bunnerbg.png';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
@@ -26,10 +19,11 @@ import { PiCaretLeftThin, PiCaretRightThin } from 'react-icons/pi';
 import swiper1 from '../../img/swiper1.png';
 import swiper2 from '../../img/swiper2.jpg';
 import SlideFirst from './SlideFirst.jsx';
-import IconButton from 'components/Buttons/IconButton/IconButton.jsx';
+import { useTranslation } from 'react-i18next';
 
 function Bunner() {
-  // const swiper = new Swiper();
+const { t } = useTranslation();
+
   return (
     <>
       <BunnerSection>
@@ -55,7 +49,7 @@ function Bunner() {
                 loading="lazy"
                 style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
               />
-              <TitleTwo>Зробимо твій будинок затишним!</TitleTwo>
+              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
             </BunnerFlex>
           </SwiperSlide>
           <SwiperSlide>
@@ -66,7 +60,7 @@ function Bunner() {
                 loading="lazy"
                 style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
               />
-              <TitleTwo>Зробимо твій будинок затишним!</TitleTwo>
+              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
             </BunnerFlex>
           </SwiperSlide>
         </Swiper>

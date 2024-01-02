@@ -6,26 +6,38 @@ import Basket from '../../img/basket.jpg'
 import Vase from '../../img/vase.jpg'
 import Textile from '../../img/textile.jpg'
 import Forkitchen from '../../img/forkitchen.jpg'
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 function CatalogSection() {
+    const { t } = useTranslation();
+
     return (
         <CatalogWrapper>
-            <TitleNews >Каталог</TitleNews>
+            <TitleNews >{t('catalogSection.titleCatalog')}</TitleNews>
             <CatalogGrid>
                 <CatalogItem>
+                    <Link to='/'>
                 <Image src={Basket} />
-                    <TextOverlayOne>Декоративні корзини</TextOverlayOne>
+                        <TextOverlayOne>Декоративні корзини</TextOverlayOne>
+                        </Link>
                 </CatalogItem>
                 <CatalogItem>
+                     <Link to='/'>
                 <Image src={Vase} />
-                    <TextOverlayTwo>Вази та кашпо</TextOverlayTwo>
+                        <TextOverlayTwo>Вази та кашпо</TextOverlayTwo>
+                    </Link>
                 </CatalogItem>
                 <CatalogItem>
+                     <Link to='/'>
                 <Image src={Textile} />
-                    <TextOverlayThree>Текстиль</TextOverlayThree>
+                        <TextOverlayThree>Текстиль</TextOverlayThree>
+                    </Link>
                 </CatalogItem>
                 <CatalogItem>
+                     <Link to='/'>
                 <Image src={Forkitchen} />
-                    <TextOverlayFour>Все для кухні</TextOverlayFour>
+                        <TextOverlayFour>Все для кухні</TextOverlayFour>
+                    </Link>
                 </CatalogItem>
             </CatalogGrid>
             <Button>Переглянути все</Button>
