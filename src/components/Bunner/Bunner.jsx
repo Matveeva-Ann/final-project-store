@@ -4,6 +4,7 @@ import {
   TitleTwo,
   BunnerSection,
   BunnerFlex,
+  TitleSlide,
 } from './Bunner.style.jsx';
 
 import 'swiper/css';
@@ -19,6 +20,7 @@ import { PiCaretLeftThin, PiCaretRightThin } from 'react-icons/pi';
 import swiper1 from '../../img/swiper1.png';
 import swiper2 from '../../img/swiper2.jpg';
 import SlideFirst from './SlideFirst.jsx';
+
 import { useTranslation } from 'react-i18next';
 
 function Bunner() {
@@ -29,7 +31,7 @@ const { t } = useTranslation();
       <BunnerSection>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={0}
+          spaceBetween={500}
           slidesPerView={1}
           navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
           scrollbar={{ draggable: true }}
@@ -42,7 +44,7 @@ const { t } = useTranslation();
           </SwiperSlide>
 
           <SwiperSlide>
-            <BunnerFlex>
+            <TitleSlide>
               <img
                 src={swiper1}
                 alt="swiper"
@@ -50,10 +52,10 @@ const { t } = useTranslation();
                 style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
               />
               <TitleTwo>{t('slideFirst.title')}</TitleTwo>
-            </BunnerFlex>
+            </TitleSlide>
           </SwiperSlide>
           <SwiperSlide>
-            <BunnerFlex>
+            <TitleSlide>
               <img
                 src={swiper2}
                 alt="swiper"
@@ -61,7 +63,7 @@ const { t } = useTranslation();
                 style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
               />
               <TitleTwo>{t('slideFirst.title')}</TitleTwo>
-            </BunnerFlex>
+            </TitleSlide>
           </SwiperSlide>
         </Swiper>
 

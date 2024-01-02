@@ -11,8 +11,11 @@ export const PublicInfo = styled.div`
   flex-direction: column;
    }
 `
-export const PublicityImg=styled.img`
-object-position:cover;
+export const PublicityImg = styled.img`
+ object-fit: scale-down;
+height:100%;
+width:50%;
+
  @media (width<1025px){
     order:3;
  }

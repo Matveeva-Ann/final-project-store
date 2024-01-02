@@ -41,51 +41,59 @@ export const CatalogItem=styled.div`
   display: flex;
   flex-direction: column;
 `
-export const TextOverlayFour=styled.div`
+export const TextOverlay=styled.div`
    position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   padding: 20px;
   font-family: "Montserrat", Sans-serif;
+   width:190px;
 `
-export const TextOverlayOne=styled.div`
-   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
-  font-family: "Montserrat", Sans-serif;
-`
-export const TextOverlayTwo=styled.div`
-   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
-  font-family: "Montserrat", Sans-serif;
-`
-export const TextOverlayThree=styled.div`
-   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
-  font-family: "Montserrat", Sans-serif;
-`
+// export const TextOverlayOne=styled.div`
+//    position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   color: white;
+//   font-size: 20px;
+//   font-weight: 500;
+//   text-align: center;
+//   padding: 20px;
+//   font-family: "Montserrat", Sans-serif;
+//    width:190px;
+// `
+// export const TextOverlayTwo=styled.div`
+//    position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   color: white;
+//   font-size: 20px;
+//   font-weight: 500;
+//   text-align: center;
+//   padding: 20px;
+//   font-family: "Montserrat", Sans-serif;
+//    width:190px;
+// `
+// export const TextOverlayThree=styled.div`
+//    position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   color: white;
+//   font-size: 20px;
+//   font-weight: 500;
+//   text-align: center;
+//   padding: 20px;
+//   font-family: "Montserrat", Sans-serif;
+//    width:190px;
+// `
+export const TextOverlayOne = TextOverlay;
+export const TextOverlayTwo = TextOverlay;
+export const TextOverlayThree = TextOverlay;
+export const TextOverlayFour = TextOverlay;

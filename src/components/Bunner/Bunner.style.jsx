@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
 
 export const BunnerSection = styled.section`
-  margin: 50px 0 150px;
+  margin: 50px auto 150px;
+  /* @media (width>) {
+    
+  } */
 `;
 
 export const Title = styled.h1`
@@ -46,6 +49,12 @@ export const TitleTwo = styled.h2`
   font-style: normal;
   line-height: 60px;
   margin: 0;
+   
+`;
+export const TitleSlide = styled.div`
+display:block;
+  
+  margin: 0 auto;
    
 `;
 
