@@ -15,8 +15,8 @@ export const HeaderStyle = styled.header`
   min-height: 80px;
   background-color: var(--backgroundColor);
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  @media (width < 1100px) {
+  z-index: 3;
+  @media (width < 1150px) {
     min-height: 60px;
     max-height: 64px;
   }
@@ -28,7 +28,7 @@ export const HeaderStyle = styled.header`
 export const LogoImg = styled.img`
   max-height: 95px;
   padding: 0 10px;
-  @media (width<1100px) {
+  @media (width<1150px) {
     max-height: 60px;
   }
   @media (width < 450px) {
@@ -38,19 +38,19 @@ export const LogoImg = styled.img`
 `;
 
 export const LinkStyle = styled(Link)`
-  @media (width<1100px) {
+  @media (width<1150px) {
     order: 2;
   }
 `;
 export const IconButtonWrapper = styled.div`
-  @media (width<1100px) {
+  @media (width<1150px) {
     order: 1;
   }
 `;
 
 export const RxCross1Style = styled(RxCross1)`
   display: none;
-  @media (width < 1100px) {
+  @media (width < 1150px) {
     display: block;
     font-size: 27px;
     padding: 5px;
@@ -61,7 +61,7 @@ export const RxCross1Style = styled(RxCross1)`
 `;
 export const RxHamburgerMenuStyle = styled(RxHamburgerMenu)`
   display: none;
-  @media (width < 1100px) {
+  @media (width < 1150px) {
     display: block;
     font-size: 27px;
     padding: 5px;
@@ -78,7 +78,7 @@ export const ButtonWrapper = styled.div`
 
 export const IconsWrapper = styled.div`
   display: flex;
-  @media (width<1100px) {
+  @media (width<1150px) {
     order: 3;
   }
 `;

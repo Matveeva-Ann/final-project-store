@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 10px;
-  margin-right: -50px;
   @media (width < 770px) {
     margin-right: -10px;
   }
@@ -25,7 +24,13 @@ export const FlagSpan = styled.span`
   background-size: cover;
   background-position: center;
   background-image: url(${props => flagImages[props.img] || 'none'});
-  @media (width < 400px) {
+  @media (width < 1200px) {
+    display: none;
+  }
+  @media (width < 1100px) {
+    display: inline-block;
+  }
+  @media (width < 500px) {
     display: none;
   }
 `;

@@ -1,4 +1,4 @@
-import IconButton from "constants/IconButton/IconButton";
+import IconButton from "components/Buttons/IconButton/IconButton";
 import { BsCart3Style, MdFavoriteBorderStyle } from "../Header.style";
 
 // Функція генерації розмітки для авторизованого користувача
