@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <>
       <HeaderStyle>
-        <Logo></Logo>
+        <Logo size='small'></Logo>
         <Navigation></Navigation>
         <IconButtonWrapper>
           <IconButton
