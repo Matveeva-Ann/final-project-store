@@ -46,12 +46,15 @@ const { t } = useTranslation();
 
           <SwiperSlide>
             <TitleSlide>
+              <BunnerFlex>
               <img
                 src={swiper1}
                 alt="swiper"
                 loading="lazy"
                 style={{ width: 'auto', height: '540px', paddingTop:'50px' }}
               />
+                <Post> {t('slideFirst.textSlideTwo')} </Post>
+              </BunnerFlex>
               <TitleTwo>{t('slideFirst.title')}</TitleTwo>
             </TitleSlide>
           </SwiperSlide>
