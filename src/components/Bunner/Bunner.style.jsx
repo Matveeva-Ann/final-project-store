@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
 
 export const BunnerSection = styled.section`
-  margin: 50px 0 150px;
+  margin: 50px auto 150px;
+  /* @media (width>) {
+    
+  } */
 `;
 
 export const Title = styled.h1`
@@ -25,6 +28,7 @@ export const Title = styled.h1`
 
 export const BunnerFlex = styled.div`
   display: flex;
+  gap:50px 25px;
   align-items: stretch;
   @media (width < 1025px) {
     flex-direction: column;
@@ -46,6 +50,13 @@ export const TitleTwo = styled.h2`
   font-style: normal;
   line-height: 60px;
   margin: 0;
+   
+`;
+export const TitleSlide = styled.div`
+display:block;
+  
+  margin: 0 auto;
+   
 `;
 
 export const Post = styled.p`
@@ -53,7 +64,13 @@ export const Post = styled.p`
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
   line-height: 30px;
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
+  text-align: center;
+ margin:auto;
+  @media (width<1025px){
+    /* display:none; */
+    /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */
+  }
 `;
 export const BunnerImg = styled.img`
   position: relative;

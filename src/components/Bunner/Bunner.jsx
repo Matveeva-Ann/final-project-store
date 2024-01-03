@@ -1,18 +1,13 @@
 import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import {
-  Title,
   TitleTwo,
-  Post,
-  BunnerImg,
   BunnerSection,
   BunnerFlex,
-  BunnerPost,
-  SwiperPrev,
-  SwiperNext,
+  TitleSlide,
+  Post,
 } from './Bunner.style.jsx';
-import Button from 'components/Buttons/Button/Button.jsx';
-import Bunnerbg from '../../img/bunnerbg.png';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
@@ -26,16 +21,18 @@ import { PiCaretLeftThin, PiCaretRightThin } from 'react-icons/pi';
 import swiper1 from '../../img/swiper1.png';
 import swiper2 from '../../img/swiper2.jpg';
 import SlideFirst from './SlideFirst.jsx';
-import IconButton from 'components/Buttons/IconButton/IconButton.jsx';
+
+import { useTranslation } from 'react-i18next';
 
 function Bunner() {
-  // const swiper = new Swiper();
+const { t } = useTranslation();
+
   return (
     <>
       <BunnerSection>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={0}
+          spaceBetween={500}
           slidesPerView={1}
           navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
           scrollbar={{ draggable: true }}
@@ -48,26 +45,33 @@ function Bunner() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <BunnerFlex>
+            <TitleSlide>
+              <BunnerFlex>
               <img
                 src={swiper1}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
+                style={{ width: 'auto', height: '540px', paddingTop:'50px' }}
               />
-              <TitleTwo>Зробимо твій будинок затишним!</TitleTwo>
-            </BunnerFlex>
+                <Post> {t('slideFirst.textSlideTwo')} </Post>
+              </BunnerFlex>
+              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
+            </TitleSlide>
           </SwiperSlide>
           <SwiperSlide>
-            <BunnerFlex>
+            <TitleSlide>
+              <BunnerFlex>
               <img
                 src={swiper2}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px', paddingRight: '10px' }}
+                style={{ width: 'auto', height: '540px' }}
               />
-              <TitleTwo>Зробимо твій будинок затишним!</TitleTwo>
-            </BunnerFlex>
+                <Post>{t('slideFirst.textSlideTree')}</Post>
+              </BunnerFlex>
+              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
+              
+            </TitleSlide>
           </SwiperSlide>
         </Swiper>
 
