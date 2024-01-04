@@ -23,8 +23,8 @@ export default function FooterContacts() {
       </li>
       <li><b>{t('footer.contacts.socialMedia')}</b></li>
       <div>
-        <FaFacebookStyle><a href="https://www.facebook.com/people/Crocus-Home-Decor/100074537329420/" target="_blank" aria-label="Facebook" rel="noopener noreferrer"></a></FaFacebookStyle>
-        <FaInstagramStyle><a href="https://www.instagram.com/crocus.home.decor/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"></a> </FaInstagramStyle>
+        <a href="https://www.facebook.com/people/Crocus-Home-Decor/100074537329420/" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><FaFacebookStyle/></a>
+        <a href="https://www.instagram.com/crocus.home.decor/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><FaInstagramStyle/></a>
       </div>
     </FooterContact>
   );

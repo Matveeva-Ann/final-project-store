@@ -9,31 +9,11 @@ const uaTranslations = {
       deliveryPayment: 'Доставка і оплата',
       findUs: 'Де нас знайти?',
     },
-
-    footer: {
-      navigation: {
-        home: 'Головна',
-        catalog: 'Каталог',
-        promo: 'Акції',
-        aboutUs: 'Про нас',
-        blog: 'Блог',
-        deliveryPayment: 'Доставка і оплата',
-        findUs: 'Де нас знайти?',
-        ReturnOfGoods: 'Повернення Товару',
-      },
-      categorys: {
-        
-      },
-      contacts:{
-        workHours: 'Графік роботи:',
-        timeRanges: 'Пн-Сб з 10:00 до 18:00',
-        address: 'Адреса:',
-        addressLink: 'Проспект Незалежності, 140-Б',
-        phone: 'Телефон:',
-        socialMedia: 'Ми у соц мережах:',
-      },
-     
-      allRightsReserved: 'Всі права захищені',
+    main:{
+      findUs:{
+        title: 'Де нас знайти?',
+      }
+    },
 
     slideFirst: {
       title: 'Зробимо твій будинок затишним!',
@@ -56,7 +36,33 @@ const uaTranslations = {
         '  У Crocus Decor ми розуміємо, що Ваш дім – це вираз Вашої особистості, і саме тому пропонуємо широкий вибір стилів та варіантів декору та подарунків. Незалежно від того, чи Ви впевнені в своєму стилі, чи шукаєте натхнення, ми готові допомогти Вам створити атмосферу, яка відповідає уявленням про ідеальний дім.',
 
     },
+
+    footer: {
+      navigation: {
+        home: 'Головна',
+        catalog: 'Каталог',
+        promo: 'Акції',
+        aboutUs: 'Про нас',
+        blog: 'Блог',
+        deliveryPayment: 'Доставка і оплата',
+        findUs: 'Де нас знайти?',
+        ReturnOfGoods: 'Повернення Товару',
+      },
+     
+      contacts:{
+        workHours: 'Графік роботи:',
+        timeRanges: 'Пн-Сб з 10:00 до 18:00',
+        address: 'Адреса:',
+        addressLink: 'Проспект Незалежності, 140-Б, Ізмаїл, Одеська область',
+        phone: 'Телефон:',
+        socialMedia: 'Ми у соц мережах:',
+      },
+     
+      allRightsReserved: 'Всі права захищені',
+
+ 
   },
-};
+}
+}
 
 export default uaTranslations;
