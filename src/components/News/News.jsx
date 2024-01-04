@@ -7,7 +7,7 @@ function News() {
     const { t } = useTranslation();
     return (
         <NewsWrapper>
-            <TitleNews style={{ margin: '0 auto' }}>{t('news.titleNews')}</TitleNews>
+            <TitleNews style={{ margin: '0 auto' }}>{t('main.news.titleNews')}</TitleNews>
             <p> тут будуть новинки</p>
             <Button>Переглянути все</Button>
         </NewsWrapper>

@@ -52,9 +52,17 @@ export const TitleTwo = styled.h2`
   margin: 0;
    
 `;
+export const ColoredElement=styled.div`
+   position: absolute;
+      width: 850px; 
+      height: 400px; 
+      background-color: var(--articleColorBg);
+      top: 5px;
+      z-index:-1;
+    
+`
 export const TitleSlide = styled.div`
 display:block;
-  
   margin: 0 auto;
    
 `;
@@ -64,7 +72,6 @@ export const Post = styled.p`
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
   line-height: 30px;
-  /* margin: 0 0 20px; */
   text-align: center;
  margin:auto;
   @media (width<1025px){
@@ -105,4 +112,12 @@ export const SwiperNext = styled.div`
 
 export const WrapperSlideFirst = styled.div`
   padding-top: 50px;
+   z-index:2;
+  position:relative;
+`
+export const ImageSwiper=styled.img`
+  display: block;
+  width:auto;
+  height: 450px;
+ padding-top: 50px;
 `
