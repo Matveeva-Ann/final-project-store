@@ -6,6 +6,7 @@ import {
   BunnerFlex,
   TitleSlide,
   Post,
+  ImageSwiper,
 } from './Bunner.style.jsx';
 
 import 'swiper/css';
@@ -47,29 +48,27 @@ const { t } = useTranslation();
           <SwiperSlide>
             <TitleSlide>
               <BunnerFlex>
-              <img
+              <ImageSwiper
                 src={swiper1}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px', paddingTop:'50px' }}
               />
-                <Post> {t('slideFirst.textSlideTwo')} </Post>
+                <Post> {t('main.slideTwo.text')} </Post>
               </BunnerFlex>
-              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
+              <TitleTwo>{t('main.slideFirst.title')}</TitleTwo>
             </TitleSlide>
           </SwiperSlide>
           <SwiperSlide>
             <TitleSlide>
               <BunnerFlex>
-              <img
+              <ImageSwiper
                 src={swiper2}
                 alt="swiper"
                 loading="lazy"
-                style={{ width: 'auto', height: '540px' }}
               />
-                <Post>{t('slideFirst.textSlideTree')}</Post>
+                <Post>{t('main.slideTree.text')}</Post>
               </BunnerFlex>
-              <TitleTwo>{t('slideFirst.title')}</TitleTwo>
+              <TitleTwo>{t('main.slideFirst.title')}</TitleTwo>
               
             </TitleSlide>
           </SwiperSlide>

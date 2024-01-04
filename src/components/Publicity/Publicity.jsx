@@ -10,9 +10,9 @@ function Publicity() {
             <PublicityImg src={Public} loading="lazy" alt="publicity" />
             <PublicInline>
             <TitleTwo style={{ fontFamily: "Cormorant Garamond",padding:" 70px 0" }}> CROCUS HOME DECOR</TitleTwo>
-        <Post>{t('publicity.postOne')}
+        <Post>{t('main.publicity.postOne')}
               </Post>
-            <Post>{t('publicity.postTwo')}     
+            <Post>{t('main.publicity.postTwo')}     
            </Post> 
                
             </PublicInline>

@@ -13,7 +13,7 @@ function CatalogSection() {
 
     return (
         <CatalogWrapper>
-            <TitleNews >{t('catalogSection.titleCatalog')}</TitleNews>
+            <TitleNews >{t('main.catalogSection.titleCatalog')}</TitleNews>
             <CatalogGrid>
                 <CatalogItem>
                     <Link to='/'>
