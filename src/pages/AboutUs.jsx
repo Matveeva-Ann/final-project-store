@@ -1,20 +1,20 @@
-
-import {  TitleTwo } from "components/Bunner/Bunner.style";
-import { AboutUsWrapper, ImageAboutUs,AboutUsBlock,ColoredElementAbout,PostAbout} from "./AboutUs.style";
+import { AboutUsWrapper, ImageAboutUs,AboutUsBlock,ColoredElementAbout} from "./AboutUs.style";
 import Public from "../img/public.png";
 import Swiper1 from "../img/swiper1.png";
 import { useTranslation } from 'react-i18next';
+import ProjectTitles from "components/common-styles/ProjectTitles/ProjectTitles";
+import CommonTextAboutStyles from "components/common-styles/CommonTextAboutStyles/CommonTextAboutStyles";
 
 
 export default function AboutUs() {
   const { t } = useTranslation();
   return (
     <>
-    <TitleTwo>{t('pageAboutUs.post.title')}</TitleTwo>
+    <ProjectTitles>{t('pageAboutUs.post.title')}</ProjectTitles>
     <AboutUsWrapper>
         <AboutUsBlock>
-          <PostAbout>{t('pageAboutUs.post.textOne')}</PostAbout> 
-          <PostAbout > {t('pageAboutUs.post.textTwo')}</PostAbout> 
+          <CommonTextAboutStyles>{t('pageAboutUs.post.textOne')}</CommonTextAboutStyles> 
+          <CommonTextAboutStyles > {t('pageAboutUs.post.textTwo')}</CommonTextAboutStyles> 
           <ImageAboutUs src={Swiper1} loading="lazy" alt="aboutUs" />
       </AboutUsBlock>
       <ColoredElementAbout/>

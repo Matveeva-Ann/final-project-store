@@ -5,7 +5,6 @@ export const AboutUsWrapper=styled.div`
     padding-top: 70px;
      overflow: hidden;
      @media (width<1025px) {
-        /* display:inline-block ; */
         flex-direction: column-reverse;
     }
 `
@@ -18,7 +17,6 @@ export const AboutUsBlock=styled.div`
 export const ImageAboutUs=styled.img`
     display: block;
     size :center;
-  /* max-width: 460px; */
   width:auto;
     max-height:350px;
     height:auto;
@@ -42,16 +40,4 @@ export const ColoredElementAbout=styled.div`
     @media (width<1025px) {
         display:none;
     }
-`
-export const PostAbout=styled.p`
-    color: var(--textColorSecondary);
-  font-family: 'Montserrat', Sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
- margin:auto;
- padding:20px 30px;
- @media (max-width:1025px) {
-    /* order:2; */
-    /* display:flex; */
- }
 `

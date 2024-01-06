@@ -27,6 +27,12 @@ const uaTranslations = {
       },
       catalogSection: {
         titleCatalog: 'Каталог',
+        catalog: {
+          oneSection: 'Декоративні корзини',
+          twoSection: 'Вази та кашпо',
+          threeSection: 'Текстиль',
+          fourSection: 'Все для кухні',
+        },
       },
       publicity: {
         postOne:

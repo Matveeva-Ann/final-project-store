@@ -27,6 +27,12 @@ const enTranslations = {
       },
       catalogSection: {
         titleCatalog: 'Product catalog',
+        catalog: {
+          oneSection: 'Decorative baskets',
+          twoSection: 'Vases and planters',
+          threeSection: 'Textiles',
+          fourSection: 'Kitchen essentials',
+        },
       },
       publicity: {
         postOne:

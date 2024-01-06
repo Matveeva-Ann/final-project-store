@@ -2,9 +2,6 @@ import styled from '@emotion/styled';
 
 export const BunnerSection = styled.section`
   margin: 50px auto 150px;
-  /* @media (width>) {
-    
-  } */
 `;
 
 export const Title = styled.h1`
@@ -41,17 +38,6 @@ export const BunnerPost = styled.div`
     order: 2;
   }
 `;
-export const TitleTwo = styled.h2`
-  color: var(--titleColor);
-  padding: 0px 0 40px;
-  font-family: 'Montserrat', Sans-serif;
-  font-size: 44px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 60px;
-  margin: 0;
-   
-`;
 export const ColoredElement=styled.div`
    position: absolute;
       width: 850px; 
@@ -65,19 +51,6 @@ export const TitleSlide = styled.div`
 display:block;
   margin: 0 auto;
    
-`;
-
-export const Post = styled.p`
-  color: var(--textColorSecondary);
-  font-family: 'Montserrat', Sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
- margin:auto;
-  @media (width<1025px){
-    /* display:none; */
-    /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */
-  }
 `;
 export const BunnerImg = styled.img`
   position: relative;
