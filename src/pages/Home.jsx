@@ -2,6 +2,7 @@ import Bunner from "components/Bunner/Bunner";
 import News from "components/News/News";
 import Publicity from "components/Publicity/Publicity";
 import CatalogSection from "../components/CatalogSection/CatalogSection";
+import EmailNewsletter from "../components/EmailNewsletter/EmailNewsletter";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <News></News>
       <CatalogSection></CatalogSection>
       <Publicity></Publicity>
+      <EmailNewsletter/>
     </>
   );
 }
