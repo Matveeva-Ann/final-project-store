@@ -9,8 +9,6 @@ const uaTranslations = {
       deliveryPayment: 'Доставка і оплата',
       findUs: 'Де нас знайти?',
     },
-
-<<<<<<< HEAD:src/i18n/locale/uaTranslations.js
     main: {
       slideFirst: {
         title: 'Зробимо твій будинок затишним!',
@@ -39,8 +37,6 @@ const uaTranslations = {
         title: 'Де нас знайти?',
       }
     },
-
-=======
     slideFirst: {
       title: 'Зробимо твій будинок затишним!',
       text: 'Наш магазин декору та подарунків пропонує товари провідних світових брендів, які приємно як дарувати так і отримувати. Ми з радістю допоможемо вам обрати, незвичні подарунки на будь-яке свято. Ви можете купити подарунок в нашому магазинів або замовити он-лайн з доставкою по Україні.',
@@ -59,7 +55,6 @@ const uaTranslations = {
     news: {
       titleNews: 'Новинки',
     },
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/uaTranslations.js
     footer: {
       navigation: {
         home: 'Головна',
@@ -71,15 +66,13 @@ const uaTranslations = {
         findUs: 'Де нас знайти?',
         ReturnOfGoods: 'Повернення Товару',
       },
-<<<<<<< HEAD:src/i18n/locale/uaTranslations.js
       categorys: {},
       contacts:{
-=======
       categorys: {
 
       },
       contacts: {
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/uaTranslations.js
+
         workHours: 'Графік роботи:',
         timeRanges: 'Пн-Сб з 10:00 до 18:00',
         address: 'Адреса:',
@@ -90,16 +83,11 @@ const uaTranslations = {
 
       allRightsReserved: 'Всі права захищені',
 
-<<<<<<< HEAD:src/i18n/locale/uaTranslations.js
- 
-=======
-
    
       catalogSection: {
         titleCatalog: 'Каталог',
       },
     }
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/uaTranslations.js
   },
 }
 }

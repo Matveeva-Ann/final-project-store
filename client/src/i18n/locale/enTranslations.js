@@ -10,7 +10,7 @@ const enTranslations = {
       findUs: 'Where to Find Us?',
     },
 
-<<<<<<< HEAD:src/i18n/locale/enTranslations.js
+
     main: {
       slideFirst: {
         title: "Let's make your home cozy!",
@@ -40,7 +40,7 @@ const enTranslations = {
       },
     },
 
-=======
+
     slideFirst: {
       title: "Let's make your home cozy!",
       text: 'Our decor and gift store offers products from leading global brands, which are delightful to give and receive. We are happy to help you choose unique gifts for any occasion. You can purchase a gift in our stores or order online with delivery throughout Ukraine.',
@@ -59,7 +59,6 @@ const enTranslations = {
     news: {
       titleNews: 'New products',
     },
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/enTranslations.js
     footer: {
       navigation: {
         home: 'Home',
@@ -71,14 +70,14 @@ const enTranslations = {
         findUs: 'Where to Find Us?',
         ReturnOfGoods: 'Return of Goods',
       },
-<<<<<<< HEAD:src/i18n/locale/enTranslations.js
+
       categorys: {
         
       },
       contacts:{
-=======
+
       contacts: {
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/enTranslations.js
+
         workHours: 'Work hours:',
         timeRanges: 'Mon-Sat from 10:00 a.m. to 6:00 p.m.',
         address: 'Address:',
@@ -87,14 +86,14 @@ const enTranslations = {
         socialMedia: 'We are in social media:',
       },
       allRightsReserved: 'All rights reserved',
-<<<<<<< HEAD:src/i18n/locale/enTranslations.js
 
-=======
+
+
       catalogSection: {
         titleCatalog: 'Product catalog',
       },
     }
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/i18n/locale/enTranslations.js
+
   },
 }
 }
