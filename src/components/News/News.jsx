@@ -10,7 +10,7 @@ function News() {
         <NewsWrapper>
             <ProjectCaptions style={{ margin: '0 auto' }}>{t('main.news.titleNews')}</ProjectCaptions>
             <p> тут будуть новинки</p>
-            <Button>Переглянути все</Button>
+            <Button>{t('main.news.buttonAll') }</Button>
         </NewsWrapper>
     )
 }

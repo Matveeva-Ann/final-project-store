@@ -14,6 +14,8 @@ const enTranslations = {
       slideFirst: {
         title: "Let's make your home cozy!",
         text: 'Our decor and gift store offers products from leading global brands, which are delightful to give and receive. We are happy to help you choose unique gifts for any occasion. You can purchase a gift in our stores or order online with delivery throughout Ukraine.',
+        buttonCatalog: 'Catalog',
+        buttonSale: 'Sale',
       },
 
       slideTwo: {
@@ -24,6 +26,7 @@ const enTranslations = {
       },
       news: {
         titleNews: 'New products',
+        buttonAll: 'Review all',
       },
       catalogSection: {
         titleCatalog: 'Product catalog',

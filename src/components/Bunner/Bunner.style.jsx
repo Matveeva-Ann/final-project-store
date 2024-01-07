@@ -11,7 +11,7 @@ export const Title = styled.h1`
   font-size: 6vw;
   font-style: inherit;
   font-weight: 400;
-  line-height: 120px;
+  line-height: 1.2;
   opacity: 0.8;
   margin: 0;
   font-weight: 400;

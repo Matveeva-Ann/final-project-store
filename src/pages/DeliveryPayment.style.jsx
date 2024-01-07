@@ -29,6 +29,10 @@ export const BlockFlex=styled.div`
         grid-template-columns: repeat(2,1fr);
         gap:20px;
     }
+    @media (width<435px) {
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+    }
 `
 export const ImgPost=styled.img`
     max-width:180px;
@@ -36,5 +40,4 @@ export const ImgPost=styled.img`
 `
 export const BlockPost=styled.div`
     display:block;
-    
 `

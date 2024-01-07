@@ -17,8 +17,8 @@ export default function SlideFirst() {
           <ColoredElement></ColoredElement>
           <CommonTextStyles>{t('main.slideFirst.text') }</CommonTextStyles>
           <ButtonWrapper>
-            <LinkButton link='/shop'> Каталог</LinkButton>
-            <LinkButton buttonStyle='transparent' link='/actions'>Акції</LinkButton>
+            <LinkButton link='/shop'>{t('main.slideFirst.buttonCatalog') }</LinkButton>
+            <LinkButton buttonStyle='transparent' link='/actions'>{t('main.slideFirst.buttonSale') }</LinkButton>
           </ButtonWrapper>
         </BunnerPost>
         <BunnerImg src={Bunnerbg} loading="lazy" alt="bunner" />

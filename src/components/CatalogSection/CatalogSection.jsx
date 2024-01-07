@@ -40,7 +40,7 @@ function CatalogSection() {
                     </Link>
                 </CatalogItem>
             </CatalogGrid>
-            <Button>Переглянути все</Button>
+            <Button>{t('main.news.buttonAll')}</Button>
         </CatalogWrapper>
     )
 }
