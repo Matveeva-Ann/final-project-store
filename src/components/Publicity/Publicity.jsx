@@ -15,8 +15,7 @@ function Publicity() {
         <CommonTextStyles>{t('main.publicity.postOne')}
               </CommonTextStyles>
             <CommonTextStyles>{t('main.publicity.postTwo')}     
-           </CommonTextStyles> 
-               
+           </CommonTextStyles>    
             </PublicInline>
         </PublicInfo>
     )
