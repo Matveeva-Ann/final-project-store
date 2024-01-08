@@ -5,7 +5,7 @@ import { lazy, Suspense } from 'react';
 const HomePage = lazy(() => import('./pages/Home'));
 const CatalogPage = lazy(() => import('./pages/Catalog'));
 const ActionsPage = lazy(() => import('./pages/Actions'));
-const AboutAuPage = lazy(() => import('./pages/AboutAu'));
+const AboutUsPage = lazy(() => import('./pages/AboutUs'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const DeliveryPaymentPage = lazy(() => import('./pages/DeliveryPayment'));
 const FindUsPage = lazy(() => import('./pages/FindUs'));
@@ -45,7 +45,7 @@ export default function AppRoutes() {
           path="/about-us"
           element={
             <Suspense fallback={<div>Loading...</div>}>
-              <AboutAuPage></AboutAuPage>
+              <AboutUsPage></AboutUsPage>
             </Suspense>
           }
         />

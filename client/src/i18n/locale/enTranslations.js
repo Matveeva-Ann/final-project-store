@@ -10,7 +10,6 @@ const enTranslations = {
       findUs: 'Where to Find Us?',
     },
 
-
     main: {
       slideFirst: {
         title: "Let's make your home cozy!",
@@ -37,11 +36,10 @@ const enTranslations = {
         postTwo:
           'At Crocus Decor, we understand that your home is an expression of your personality. That is why we offer a wide range of styles and decor options, as well as gifts. Whether you are confident in your style or seeking inspiration, we are ready to help you create an atmosphere that aligns with your vision of the perfect home.',
       },
-       findUs:{
+      findUs: {
         title: 'Where to find us?',
       },
     },
-
 
     slideFirst: {
       title: "Let's make your home cozy!",
@@ -73,14 +71,8 @@ const enTranslations = {
         findUs: 'Where to Find Us?',
         ReturnOfGoods: 'Return of Goods',
       },
-
-      categorys: {
-        
-      },
-      contacts:{
-
+      categorys: {},
       contacts: {
-
         workHours: 'Work hours:',
         timeRanges: 'Mon-Sat from 10:00 a.m. to 6:00 p.m.',
         address: 'Address:',
@@ -89,16 +81,8 @@ const enTranslations = {
         socialMedia: 'We are in social media:',
       },
       allRightsReserved: 'All rights reserved',
-
-
-
-      catalogSection: {
-        titleCatalog: 'Product catalog',
-      },
-    }
-
+    },
   },
-}
-}
+};
 
 export default enTranslations;

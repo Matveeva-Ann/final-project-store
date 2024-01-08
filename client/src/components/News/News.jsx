@@ -1,15 +1,16 @@
 import './News.style'
-import {TitleNews,NewsWrapper} from '../News/News.style'
+import { NewsWrapper} from '../News/News.style'
 import Button from 'components/Buttons/Button/Button'
 import { useTranslation } from 'react-i18next';
+import ProjectCaptions from 'components/common-styles/ProjectCaptions/ProjectCaptions';
 
 function News() {
     const { t } = useTranslation();
     return (
         <NewsWrapper>
-            <TitleNews style={{ margin: '0 auto' }}>{t('main.news.titleNews')}</TitleNews>
+            <ProjectCaptions style={{ margin: '0 auto' }}>{t('main.news.titleNews')}</ProjectCaptions>
             <p> тут будуть новинки</p>
-            <Button>Переглянути все</Button>
+            <Button>{t('main.news.buttonAll') }</Button>
         </NewsWrapper>
     )
 }

@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PiCaretLeftThin, PiCaretRightThin } from 'react-icons/pi';
+
 import './styles.css';
 import SlideFirst from './SlideFirst.jsx';
 import SlideSecond from './SlideSecond.jsx';
