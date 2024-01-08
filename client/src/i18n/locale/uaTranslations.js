@@ -77,6 +77,7 @@ const uaTranslations = {
         ReturnOfGoods: 'Повернення Товару',
       },
       categorys: {},
+
       contacts: {
         contacts: {
           workHours: 'Графік роботи:',
@@ -133,6 +134,9 @@ const uaTranslations = {
       },
     },
   },
+
 };
+
+
 
 export default uaTranslations;

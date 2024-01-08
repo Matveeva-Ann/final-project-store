@@ -71,7 +71,11 @@ const enTranslations = {
         findUs: 'Where to Find Us?',
         ReturnOfGoods: 'Return of Goods',
       },
-      categorys: {},
+
+      categorys: {
+        
+      },
+     
       contacts: {
         workHours: 'Work hours:',
         timeRanges: 'Mon-Sat from 10:00 a.m. to 6:00 p.m.',
@@ -83,6 +87,8 @@ const enTranslations = {
       allRightsReserved: 'All rights reserved',
     },
   },
+
 };
+
 
 export default enTranslations;
