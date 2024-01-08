@@ -1,29 +1,18 @@
 import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import {
-  TitleTwo,
-  BunnerSection,
-  BunnerFlex,
-  TitleSlide,
-  Post,
-  ImageSwiper,
-} from './Bunner.style.jsx';
-
+import { BunnerSection, BunnerFlex,TitleSlide,ImageSwiper,} from './Bunner.style.jsx';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PiCaretLeftThin, PiCaretRightThin } from 'react-icons/pi';
-
-// import { Navigation, Pagination, EffectCoverFlow } from 'swiper';
-// import SwiperSlide
-
 import swiper1 from '../../img/swiper1.png';
 import swiper2 from '../../img/swiper2.jpg';
 import SlideFirst from './SlideFirst.jsx';
-
 import { useTranslation } from 'react-i18next';
+import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles.jsx';
+import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTextStyles.jsx';
 
 function Bunner() {
 const { t } = useTranslation();
@@ -53,9 +42,9 @@ const { t } = useTranslation();
                 alt="swiper"
                 loading="lazy"
               />
-                <Post> {t('main.slideTwo.text')} </Post>
+                <CommonTextStyles> {t('main.slideTwo.text')} </CommonTextStyles>
               </BunnerFlex>
-              <TitleTwo>{t('main.slideFirst.title')}</TitleTwo>
+              <ProjectTitles>{t('main.slideFirst.title')}</ProjectTitles>
             </TitleSlide>
           </SwiperSlide>
           <SwiperSlide>
@@ -66,9 +55,9 @@ const { t } = useTranslation();
                 alt="swiper"
                 loading="lazy"
               />
-                <Post>{t('main.slideTree.text')}</Post>
+                <CommonTextStyles>{t('main.slideTree.text')}</CommonTextStyles>
               </BunnerFlex>
-              <TitleTwo>{t('main.slideFirst.title')}</TitleTwo>
+              <ProjectTitles>{t('main.slideFirst.title')}</ProjectTitles>
               
             </TitleSlide>
           </SwiperSlide>

@@ -72,13 +72,6 @@ export const Post = styled.p`
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
   line-height: 30px;
-<<<<<<< HEAD:src/components/Bunner/Bunner.style.jsx
-  text-align: center;
- margin:auto;
-=======
-  text-align: start;
-  margin-bottom: 40px;
->>>>>>> 8f7bbee2a55222601fa7b5147b1c3082efe32422:client/src/components/Bunner/Bunner.style.jsx
   @media (width<1025px){
     /* display:none; */
     /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */
