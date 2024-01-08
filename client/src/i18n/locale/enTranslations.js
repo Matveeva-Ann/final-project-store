@@ -74,7 +74,7 @@ const enTranslations = {
       categorys: {
         
       },
-      contacts:{
+     
 
       contacts: {
 
@@ -95,7 +95,6 @@ const enTranslations = {
     }
 
   },
-}
 }
 
 export default enTranslations;

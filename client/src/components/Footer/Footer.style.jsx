@@ -7,7 +7,8 @@ export const FooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
   background-color: var(--footerColorBg);
-  padding: 0% 13% 0% 13%;
+  padding: 50px 13% 40px 13%;
+
 `;
 export const FooterWrapper = styled.div`
   display: flex;
