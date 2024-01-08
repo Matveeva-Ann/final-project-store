@@ -58,3 +58,19 @@ html[data-theme='BASE'] {
   --nuvDropDownHover: #494c4f;
 
 }
+
+/* Загальна стилізація скролбара */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Стилізація полоски скролбара */
+::-webkit-scrollbar-track {
+  background: #bfb19558;
+}
+
+/* Стилізація "ползуна" скролбара */
+::-webkit-scrollbar-thumb {
+  background: var(--accentColorBg);
+  border-radius: 6px;
+}
