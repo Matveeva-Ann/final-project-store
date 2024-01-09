@@ -2,9 +2,6 @@ import styled from '@emotion/styled';
 
 export const BunnerSection = styled.section`
   margin: 50px auto 150px;
-  /* @media (width>) {
-    
-  } */
 `;
 
 export const Title = styled.h1`
@@ -28,7 +25,7 @@ export const Title = styled.h1`
 
 export const BunnerFlex = styled.div`
   display: flex;
-  gap:50px 25px;
+  gap: 50px 25px;
   align-items: stretch;
   @media (width < 1025px) {
     flex-direction: column;
@@ -50,21 +47,18 @@ export const TitleTwo = styled.h2`
   font-style: normal;
   line-height: 60px;
   margin: 0;
-   
 `;
-export const ColoredElement=styled.div`
-   position: absolute;
-      width: 850px; 
-      height: 400px; 
-      background-color: var(--articleColorBg);
-      top: 5px;
-      z-index:-1;
-    
-`
+export const ColoredElement = styled.div`
+  position: absolute;
+  width: 850px;
+  height: 400px;
+  background-color: var(--articleColorBg);
+  top: 5px;
+  z-index: -1;
+`;
 export const TitleSlide = styled.div`
-display:block;
+  display: block;
   margin: 0 auto;
-   
 `;
 
 export const Post = styled.p`
@@ -72,10 +66,6 @@ export const Post = styled.p`
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
   line-height: 30px;
-  @media (width<1025px){
-    /* display:none; */
-    /* якщо приховати в банері текст в цьому діапазоні, то приховується текс той що використовується за спільною назвою компонента в publicity */
-  }
 `;
 export const BunnerImg = styled.img`
   position: relative;
@@ -110,12 +100,12 @@ export const SwiperNext = styled.div`
 
 export const WrapperSlideFirst = styled.div`
   padding-top: 50px;
-   z-index:2;
-  position:relative;
-`
-export const ImageSwiper=styled.img`
+  z-index: 2;
+  position: relative;
+`;
+export const ImageSwiper = styled.img`
   display: block;
-  width:auto;
+  width: auto;
   height: 450px;
- padding-top: 50px;
-`
+  padding-top: 50px;
+`;

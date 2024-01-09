@@ -1,9 +1,9 @@
-import Bunner from "components/Bunner/Bunner";
-import News from "components/News/News";
-import Publicity from "components/Publicity/Publicity";
-import CatalogSection from "../components/CatalogSection/CatalogSection";
-import EmailNewsletter from "../components/EmailNewsletter/EmailNewsletter";
-
+import Bunner from 'components/Bunner/Bunner';
+import News from 'components/News/News';
+import Publicity from 'components/Publicity/Publicity';
+import CatalogSection from '../components/CatalogSection/CatalogSection';
+import EmailNewsletter from '../components/EmailNewsletter/EmailNewsletter';
+import Blog from 'components/Blog/Blog';
 
 export default function Home() {
   return (
@@ -12,7 +12,8 @@ export default function Home() {
       <News></News>
       <CatalogSection></CatalogSection>
       <Publicity></Publicity>
-      <EmailNewsletter/>
+      <Blog></Blog>
+      <EmailNewsletter />
     </>
   );
 }

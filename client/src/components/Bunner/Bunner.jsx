@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import { BunnerSection, BunnerFlex,TitleSlide,ImageSwiper,} from './Bunner.style.jsx';
+import { BunnerSection, BunnerFlex, TitleSlide, ImageSwiper } from './Bunner.style.jsx';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
@@ -15,7 +15,7 @@ import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles.
 import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTextStyles.jsx';
 
 function Bunner() {
-const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -37,11 +37,7 @@ const { t } = useTranslation();
           <SwiperSlide>
             <TitleSlide>
               <BunnerFlex>
-              <ImageSwiper
-                src={swiper1}
-                alt="swiper"
-                loading="lazy"
-              />
+                <ImageSwiper src={swiper1} alt="swiper" loading="lazy" />
                 <CommonTextStyles> {t('main.slideTwo.text')} </CommonTextStyles>
               </BunnerFlex>
               <ProjectTitles>{t('main.slideFirst.title')}</ProjectTitles>
@@ -50,22 +46,21 @@ const { t } = useTranslation();
           <SwiperSlide>
             <TitleSlide>
               <BunnerFlex>
-              <ImageSwiper
-                src={swiper2}
-                alt="swiper"
-                loading="lazy"
-              />
+                <ImageSwiper src={swiper2} alt="swiper" loading="lazy" />
                 <CommonTextStyles>{t('main.slideTree.text')}</CommonTextStyles>
               </BunnerFlex>
               <ProjectTitles>{t('main.slideFirst.title')}</ProjectTitles>
-              
             </TitleSlide>
           </SwiperSlide>
         </Swiper>
 
         {/* зробила кнопки але не стилізувала їх, поки не знаю як їх стилізувати, бо коли стилізується то Swiper перестає бачити свої класи swiper-button-next  та swiper-button-prev, якщо тут прям через style то працює, але то не зовсім правильно */}
-        <button className="swiper-button-next" aria-label="Go to Next Slide" style={{ border: 'none', background: 'transparent', color: 'var(--textColorSecondary)' }}>
-          <PiCaretRightThin/>
+        <button
+          className="swiper-button-next"
+          aria-label="Go to Next Slide"
+          style={{ border: 'none', background: 'transparent', color: 'var(--textColorSecondary)' }}
+        >
+          <PiCaretRightThin />
         </button>
         <button className="swiper-button-prev" aria-label="Go to Previous Slide">
           <PiCaretLeftThin />

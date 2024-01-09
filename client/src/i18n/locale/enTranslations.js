@@ -34,6 +34,11 @@ const enTranslations = {
         postTwo:
           'At Crocus Decor, we understand that your home is an expression of your personality. That is why we offer a wide range of styles and decor options, as well as gifts. Whether you are confident in your style or seeking inspiration, we are ready to help you create an atmosphere that aligns with your vision of the perfect home.',
       },
+      blog: {
+        title: 'Blog',
+        postOne: 'How to transform the kitchen, styles, and space organization. 25.12.23',
+        postTwo: 'Ideas for decorating the living room. 08.01.24',
+      },
       findUs: {
         title: 'Where to find us?',
       },
