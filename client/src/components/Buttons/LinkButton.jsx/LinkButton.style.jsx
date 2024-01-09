@@ -17,4 +17,8 @@ export const ButtonStyle = styled(Link)`
     background: #fff;
     color: var(--accentColorText);
   }
+  @media (width < 450px) {
+    padding: 6px 20px;
+    font-size: 16px;
+  }
 `;

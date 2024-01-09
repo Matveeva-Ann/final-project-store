@@ -15,7 +15,7 @@ const initI18n = async () => {
     .use(LanguageDetector)
     .init({
       fallbackLng: 'uk',
-      debug: true,
+      debug: false,
       resources: translations
     });
 };

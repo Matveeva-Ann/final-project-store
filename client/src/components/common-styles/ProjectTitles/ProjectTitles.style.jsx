@@ -18,3 +18,4 @@ export const PublicTitle = styled.h2`
   font-weight: 400;
   padding: 50px 0;
 `;
+

@@ -10,6 +10,7 @@ export const ButtonStyle = styled.button`
   font-size: 20px;
   font-weight: 500;
   flex-grow: 1;
+  border-radius: ${props => (props.radius)};
   :hover {
     background: #fff;
     color: var(--accentColorText);
