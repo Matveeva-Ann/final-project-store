@@ -1,7 +1,9 @@
-import { Post, TitleTwo} from '../Bunner/Bunner.style'
 import Public from "../../img/public.png";
 import  {PublicityImg,PublicInfo,PublicInline} from "./Publicity.style"
 import { useTranslation } from 'react-i18next';
+// import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles';
+import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTextStyles';
+import { PublicTitle } from "components/common-styles/ProjectTitles/ProjectTitles.style";
 
 function Publicity() {
     const { t } = useTranslation();
@@ -9,12 +11,11 @@ function Publicity() {
         <PublicInfo>
             <PublicityImg src={Public} loading="lazy" alt="publicity" />
             <PublicInline>
-            <TitleTwo style={{ fontFamily: "Cormorant Garamond",padding:" 70px 0" }}> CROCUS HOME DECOR</TitleTwo>
-        <Post>{t('main.publicity.postOne')}
-              </Post>
-            <Post>{t('main.publicity.postTwo')}     
-           </Post> 
-               
+            <PublicTitle> CROCUS HOME DECOR</PublicTitle>
+        <CommonTextStyles>{t('main.publicity.postOne')}
+              </CommonTextStyles>
+            <CommonTextStyles>{t('main.publicity.postTwo')}     
+           </CommonTextStyles>    
             </PublicInline>
         </PublicInfo>
     )

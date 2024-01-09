@@ -10,13 +10,12 @@ const enTranslations = {
       findUs: 'Where to Find Us?',
     },
 
-
     main: {
       slideFirst: {
         title: "Let's make your home cozy!",
         text: 'Our decor and gift store offers products from leading global brands, which are delightful to give and receive. We are happy to help you choose unique gifts for any occasion. You can purchase a gift in our stores or order online with delivery throughout Ukraine.',
-        btnText1: 'Catalogue',
-        btnText2: 'Discounts',
+        buttonCatalog: 'Catalogue',
+        buttonSale: 'Discounts',
       },
 
       slideTwo: {
@@ -41,11 +40,10 @@ const enTranslations = {
         postTwo:
           'At Crocus Decor, we understand that your home is an expression of your personality. That is why we offer a wide range of styles and decor options, as well as gifts. Whether you are confident in your style or seeking inspiration, we are ready to help you create an atmosphere that aligns with your vision of the perfect home.',
       },
-       findUs:{
+      findUs: {
         title: 'Where to find us?',
       },
     },
-
 
     slideFirst: {
       title: "Let's make your home cozy!",
@@ -77,14 +75,8 @@ const enTranslations = {
         findUs: 'Where to Find Us?',
         ReturnOfGoods: 'Return of Goods',
       },
-
-      categorys: {
-        
-      },
-      contacts:{
-
+      categorys: {},
       contacts: {
-
         workHours: 'Work hours:',
         timeRanges: 'Mon-Sat from 10:00 a.m. to 6:00 p.m.',
         address: 'Address:',
@@ -93,16 +85,8 @@ const enTranslations = {
         socialMedia: 'We are in social media:',
       },
       allRightsReserved: 'All rights reserved',
-
-
-
-      catalogSection: {
-        titleCatalog: 'Product catalog',
-      },
-    }
-
+    },
   },
-}
-}
+};
 
 export default enTranslations;
