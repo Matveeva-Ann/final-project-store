@@ -5,7 +5,6 @@
   color: var(--textColorSecondary);
   opacity: 0.3;
   z-index: 1;
-  height: 50%;
 }
 @media (width < 1025px) {
   .swiper-button-prev,

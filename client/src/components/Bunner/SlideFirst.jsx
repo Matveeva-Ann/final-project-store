@@ -1,9 +1,7 @@
-import {BunnerFlex, BunnerImg, BunnerPost,ButtonWrapper,ColoredElement,Title, WrapperSlideFirst} from './Bunner.style';
+import { BunnerFlex, BunnerImg, BunnerPost, ButtonWrapper, ColoredElement, Post, Title, TitleTwo, WrapperSlideFirst } from './Bunner.style';
 import Bunnerbg from '../../img/bunnerbg.png';
 import LinkButton from 'components/Buttons/LinkButton.jsx/LinkButton';
 import { useTranslation } from 'react-i18next';
-import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles';
-import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTextStyles';
 
 export default function SlideFirst() {
   const { t } = useTranslation();
@@ -13,9 +11,9 @@ export default function SlideFirst() {
       <Title>CROCUS HOME DECOR</Title>
       <BunnerFlex>
         <BunnerPost>
-          <ProjectTitles>{t('main.slideFirst.title')}</ProjectTitles>
+          <TitleTwo>{t('main.slideFirst.title')}</TitleTwo>
           <ColoredElement></ColoredElement>
-          <CommonTextStyles>{t('main.slideFirst.text') }</CommonTextStyles>
+          <Post>{t('main.slideFirst.text') }</Post>
           <ButtonWrapper>
             <LinkButton link='/shop'>{t('main.slideFirst.buttonCatalog') }</LinkButton>
             <LinkButton buttonStyle='transparent' link='/actions'>{t('main.slideFirst.buttonSale') }</LinkButton>

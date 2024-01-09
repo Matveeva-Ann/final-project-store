@@ -8,12 +8,14 @@ export default function SlideThird() {
 
   return (
     <TitleSlide>
-      <TitleThirdSlide>Меблі: ключовий акцент</TitleThirdSlide>
+      <TitleThirdSlide>{t('main.slideTree.title')}</TitleThirdSlide>
       <BunnerFlex>
         <ImageSwiper src={swiper2} alt="swiper" loading="lazy" />
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <PostThirdSlide>{t('main.slideTree.text')}</PostThirdSlide>
+          <LinkButton link="/shop">{t('main.slideTree.btnText')}</LinkButton>
+        </div>
       </BunnerFlex>
-      <LinkButton link="/shop">Вибрати стильні меблі </LinkButton>
     </TitleSlide>
   );
 }

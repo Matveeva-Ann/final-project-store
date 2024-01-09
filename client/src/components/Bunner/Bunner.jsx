@@ -31,18 +31,18 @@ function Bunner() {
             <SlideFirst></SlideFirst>
           </SwiperSlide>
           <SwiperSlide>
-            <SlideSecond></SlideSecond>
+            <SlideThird></SlideThird>
           </SwiperSlide>
           <SwiperSlide>
-            <SlideThird></SlideThird>
+            <SlideSecond></SlideSecond>
           </SwiperSlide>
         </Swiper>
 
         <button className="swiper-button-next" aria-label="Go to Next Slide">
-          <PiCaretRightThin/>
+          <PiCaretRightThin />
         </button>
         <button className="swiper-button-prev" aria-label="Go to Previous Slide">
-          <PiCaretLeftThin/>
+          <PiCaretLeftThin />
         </button>
       </BunnerSection>
     </>

@@ -16,16 +16,17 @@ export const BunnerFlex = styled.div`
 
 export const TitleTwo = styled.h2`
   color: var(--titleColor);
-  padding: 0px 0 40px 20px;
+  padding: 0px 0 10px 20px;
   font-family: 'Montserrat', Sans-serif;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 500;
   font-style: normal;
-  line-height: 60px;
+  line-height: 50px;
   margin: 0;
   @media (width<1200px) {
-    font-size: 40px;
-    padding: 0px 0 25px 20px;
+    font-size: 35px;
+    line-height: 40px;
+    padding: 0px 0 10px 20px;
   }
   @media (width<1025px) {
     display: none;
@@ -33,6 +34,7 @@ export const TitleTwo = styled.h2`
 `;
 
 export const TitleSlide = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,10 +50,16 @@ export const Post = styled.p`
   color: var(--textColorSecondary);
   font-family: 'Montserrat', Sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 28px;
   text-align: start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-left: 10px;
+  margin-top: 10px;
+  @media (width<1200px) {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
   @media (width<1025px) {
     display: none;
   }
@@ -86,8 +94,8 @@ export const WrapperSlideFirst = styled.div`
   position: relative;
 `;
 export const BunnerPost = styled.div`
-  padding-right: 30px;
-  padding-top: 80px;
+  padding-right: 15px;
+  padding-top: 50px;
   @media (width < 1025px) {
     order: 2;
     padding-right: 0px;
@@ -107,7 +115,7 @@ export const ColoredElement = styled.div`
 `;
 export const BunnerImg = styled.img`
   position: relative;
-  /* width: 58%; */
+  max-height: 660px;
   width: 42vw;
   object-position: 50% 50%;
   object-fit: cover;
@@ -117,6 +125,10 @@ export const BunnerImg = styled.img`
     order: 1;
     width: 100%;
     max-height: 480px;
+  }
+  @media (width < 700px) {
+    max-height: 360px;
+    min-height: 370px;
   }
   @media (width < 450px) {
     max-height: 400px;
@@ -138,46 +150,65 @@ export const ButtonWrapper = styled.div`
 
 export const PostSecondSlideWrapper = styled.div`
   padding: 15px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const BunnerImgSecond = styled.img`
   position: relative;
-  width: 100%;
-  max-height: 400px;
-  padding-top: 50px;
+  width: 43vw;
+  max-height: 500px;
+  min-height: 450px;
   object-position: 50% 50%;
   object-fit: cover;
   display: grid;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   @media (width < 1500px) {
     max-height: 470px;
+    width: 40vw;
+  }
+  @media (width < 1200px) {
+    max-height: 470px;
+    width: 36vw;
+  }
+  @media (width<1025px) {
+    max-height: 400px;
+    min-height: 430px;
+    width: 100%;
+    margin: 0 auto 0px;
+    margin-bottom: -10px;
+  }
+  @media (width < 700px) {
+    max-height: 300px;
+    min-height: 310px;
   }
   @media (width < 450px) {
-    padding-top: 30px;
+    max-height: 300px;
+    min-height: 330px;
   }
 `;
 export const TitleSecondSlide = styled.h2`
-  position: absolute;
   text-align: center;
   color: var(--accentColorText);
-  font-size: 90px;
+  font-size: 80px;
   font-family: 'CormorantGaramond';
   font-weight: 300;
   font-style: inherit;
   line-height: 60px;
   margin: 0;
+  margin-bottom: 20px;
   top: -12px;
   left: 0;
   width: 100%;
-  text-shadow: 7px 6px 8px rgb(172 154 154 / 63%);
   @media (width < 1500px) {
-    font-size: 7vw;
+    font-size: 5.5vw;
   }
   @media (width < 1025px) {
     font-size: 6vw;
-    top: -15px;
     line-height: 60px;
+    margin-bottom: 10px;
   }
   @media (width < 450px) {
     line-height: 40px;
@@ -192,61 +223,67 @@ export const PostThirdSlide = styled.p`
   font-size: 20px;
   line-height: 30px;
   text-align: start;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-right: -20px;
   padding-left: 10px;
-  animation: textAnimation 7s ease-in-out;
+  animation: textAnimation 3s ease-in-out;
   z-index: 1;
   @media (width<1200px) {
     margin-right: -30px;
+    line-height: 26px;
   }
   @media (width<1025px) {
     display: none;
   }
 
   @keyframes textAnimation {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 `;
 
 export const ImageSwiper = styled.img`
   width: 39vw;
-  min-height: 620px;
-  max-height: 700px;
+  min-height: 470px;
+  max-height: 480px;
   object-position: 0% 50%;
   object-fit: cover;
   margin-bottom: 20px;
   z-index: 2;
 
+  @media (width < 1500px) {
+    min-height: 520px;
+    max-height: 530px;
+  }
   @media (width < 1200px) {
-    min-height: 640px;
+    min-height: 530px;
     object-position: 10% 50%;
   }
   @media (width<1025px) {
     width: 100%;
-    min-height: 400px;
-    max-height: 450px;
+    min-height: 300px;
+    max-height: 420px;
     object-position: 10% 70%;
+    margin-bottom: 0px;
   }
   @media (width<700px) {
     min-height: 300px;
     max-height: 350px;
   }
   @media (width<560px) {
-    min-height: 200px;
-    max-height: 250px;
+    min-height: 340px;
+    max-height: 350px;
   }
 `;
 export const TitleThirdSlide = styled.h2`
   color: var(--titleColor);
-  padding: 0px 0 40px 20px;
+  padding: 0px 0 20px 20px;
   font-family: 'Montserrat', Sans-serif;
   font-size: 44px;
   font-weight: 500;
