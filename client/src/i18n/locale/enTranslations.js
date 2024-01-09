@@ -15,6 +15,8 @@ const enTranslations = {
       slideFirst: {
         title: "Let's make your home cozy!",
         text: 'Our decor and gift store offers products from leading global brands, which are delightful to give and receive. We are happy to help you choose unique gifts for any occasion. You can purchase a gift in our stores or order online with delivery throughout Ukraine.',
+        btnText1: 'Catalogue',
+        btnText2: 'Discounts',
       },
 
       slideTwo: {
@@ -24,6 +26,8 @@ const enTranslations = {
       },
       slideTree: {
         text: 'Furniture plays a crucial role in interior design for various reasons. It can be the main element or even entirely define the design. Furniture determines the functionality and comfort of a space. It allows for the creation of areas for relaxation, work, storage, and other needs.',
+        btnText: "Choose furniture",
+        title: 'Furniture: Key Accent',
       },
       news: {
         titleNews: 'New products',

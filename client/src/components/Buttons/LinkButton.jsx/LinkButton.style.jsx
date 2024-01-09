@@ -13,6 +13,7 @@ export const ButtonStyle = styled(Link)`
   flex-grow: 1;
   text-decoration: none;
   text-align: center;
+  max-height: 25px;
   :hover {
     background: #fff;
     color: var(--accentColorText);
