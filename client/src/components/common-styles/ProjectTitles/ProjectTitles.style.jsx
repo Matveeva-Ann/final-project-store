@@ -9,14 +9,13 @@ export const TitleTwo = styled.h2`
   font-style: normal;
   line-height: 1;
   margin: 0;
-   
 `;
-export const PublicTitle=styled.h2`
+export const PublicTitle = styled.h2`
   color: var(--titleColor);
   font-family: 'CormorantGaramond';
   font-size: 55px;
   line-height: 1;
-    font-weight: 400;
-    padding:50px 0;
- 
-`
+  font-weight: 400;
+  padding: 50px 0;
+`;
+

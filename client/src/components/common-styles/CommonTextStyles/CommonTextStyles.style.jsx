@@ -5,5 +5,5 @@ export const Post = styled.p`
   font-size: 20px;
   line-height: 30px;
   text-align: center;
- margin:auto;
+  margin:auto;
  `
