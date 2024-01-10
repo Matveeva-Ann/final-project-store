@@ -1,17 +1,19 @@
 import styled from '@emotion/styled';
-import {Form, Field } from 'formik';
+import { Form, Field } from 'formik';
 
 export const FormWrapper = styled(Form)`
   display: flex;
   justify-content: center;
+  /* position: relative; */
 `;
 
 export const FormikWrapper = styled.div`
- margin-bottom: 50px;
-`
+  margin-bottom: 50px;
+`;
 
 export const InputWrapper = styled.div`
   position: relative;
+  left: 25px;
 
   &:focus-within label,
   input:not(:placeholder-shown) + label,
@@ -40,8 +42,11 @@ export const Error = styled.div`
 `;
 
 export const BtnWrapper = styled.div`
-  position: absolute;
-  right: 530px;
+  position: relative;
+  right: 17px;
+  @media (width < 570px) {
+    right: 10px;
+  }
 `;
 
 export const Label = styled.label`
@@ -51,6 +56,9 @@ export const Label = styled.label`
   pointer-events: none;
   transition: 0.3s ease all;
   color: #999;
+  @media (width < 570px) {
+    top: 8px;
+  }
 `;
 
 export const Input = styled(Field)`
@@ -61,4 +69,9 @@ export const Input = styled(Field)`
   padding-left: 15px;
   border-radius: 50px;
   border-color: var(--accentColorText);
+  @media (width < 570px) {
+    width: 220px;
+    height: 35px;
+    font-size: 15px;
+  }
 `;
