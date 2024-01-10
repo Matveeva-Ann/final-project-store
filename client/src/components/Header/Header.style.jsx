@@ -26,10 +26,11 @@ export const HeaderStyle = styled.header`
 `;
 
 export const LogoImg = styled.img`
-  max-height: 95px;
+  max-height: ${({ size }) => (size === 'big' ? '150px' : '95px')};
   padding: 0 10px;
   @media (width<1150px) {
     max-height: 60px;
+    order: ${({disposition}) => (disposition === 'logoFooter' ? '1' : '')};
   }
   @media (width < 450px) {
     max-height: 45px;

@@ -18,7 +18,11 @@ export default function FormikWrapper() {
           <FormWrapper>
             <FieldWrapper name="email" children={'Email'} />
             <BtnWrapper>
-              <Button radius="50px" type="submit">
+              <Button 
+              fontSize="20px" 
+              padding="12px 24px"
+               radius="50px" 
+               type="submit">
                 Submit
               </Button>
             </BtnWrapper>

@@ -8,6 +8,7 @@ export const TitleTwo = styled.h2`
   font-weight: 500;
   font-style: normal;
   line-height: 1;
+  text-align: ${({align}) => (align === 'EmailTitle' ? 'center' : '')};
   margin: 0;
 `;
 export const PublicTitle = styled.h2`
