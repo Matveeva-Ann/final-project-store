@@ -26,7 +26,7 @@ export const HeaderStyle = styled.header`
 `;
 
 export const LogoImg = styled.img`
-  max-height: 95px;
+  max-height: ${props => props.size ? props.size : '95px'};
   padding: 0 10px;
   @media (width<1150px) {
     max-height: 60px;

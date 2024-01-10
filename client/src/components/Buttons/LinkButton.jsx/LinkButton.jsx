@@ -1,9 +1,8 @@
 import { ButtonStyle } from './LinkButton.style';
 
 
-export default function LinkButton({link, buttonStyle, children}){
-
+export default function LinkButton({children, link, background}){
   return(
-    <ButtonStyle to={link} buttonStyle={buttonStyle}>{children}</ButtonStyle>
+    <ButtonStyle to={link} background={background} >{children}</ButtonStyle>
   )
 }

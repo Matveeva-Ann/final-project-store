@@ -29,10 +29,10 @@ export const FooterContact = styled.ul`
     color: var(--textColor);
   }
 
-  li:nth-child(odd) {
+  li:nth-of-type(odd) {
     padding-bottom: 15px;
   }
-  li:nth-child(even) {
+  li:nth-of-type(even) {
     padding-bottom: 20px;
   }
 `;

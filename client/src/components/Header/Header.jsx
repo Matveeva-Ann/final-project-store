@@ -7,22 +7,31 @@ import { useSelector } from 'react-redux';
 import authSelectors from '../../redux/auth/auth-selectors';
 import { generateLoggedInMarkup, generateLoggedOutMarkup } from './helpers';
 import IconButton from 'components/Buttons/IconButton/IconButton';
+import ModalRegisterLogin from 'components/Modal/ModalRegisterLogin/ModalRegisterLogin';
+import ModalResetPassword from 'components/Modal/ModalResetPassword/ModalResetPassword';
 
 const NavDropDownComponent = lazy(() => import('../Navigation/NavDropDown'));
 
 export default function Header() {
   const [isOpenDropDown, setIsOpenDropDown] = useState(false);
   const isUserLogin = useSelector(authSelectors.getIsLoggedIn);
-
+  const [isModalLoginOpen, setIsModalLoginOpen] = useState(false);
+  const [isResetModalOpen, setIsResetModalOpen] = useState(false);
+  
   //функція відкривання випадаючого меню
   function toggleDropDown() {
     setIsOpenDropDown(!isOpenDropDown);
   }
 
+  function toggleLoginModal(){
+    setIsModalLoginOpen(!isModalLoginOpen);
+   
+  }
+
   return (
     <>
       <HeaderStyle>
-        <Logo size='small'></Logo>
+        <Logo size='95px'></Logo>
         <Navigation></Navigation>
         <IconButtonWrapper>
           <IconButton
@@ -34,7 +43,7 @@ export default function Header() {
         </IconButtonWrapper>
 
         <IconsWrapper>
-          <ButtonWrapper>{isUserLogin ? generateLoggedInMarkup() : generateLoggedOutMarkup()}</ButtonWrapper>
+          <ButtonWrapper>{isUserLogin ? generateLoggedInMarkup() : generateLoggedOutMarkup(toggleLoginModal)}</ButtonWrapper>
           <LanguageToggle></LanguageToggle>
         </IconsWrapper>
       </HeaderStyle>
@@ -42,6 +51,9 @@ export default function Header() {
       <Suspense fallback={<div>Loading...</div>}>
         <NavDropDownComponent isOpenDropDown={isOpenDropDown} setIsOpenDropDown={setIsOpenDropDown} />
       </Suspense>
+
+      {isModalLoginOpen && <ModalRegisterLogin closeModal = {toggleLoginModal} resetPassword={setIsResetModalOpen}></ModalRegisterLogin>}
+      {isResetModalOpen && <ModalResetPassword closeModal={setIsResetModalOpen}></ModalResetPassword>}
     </>
   );
 }

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import {
   BunnerFlex,
   BunnerImgSecond,
-  Post,
+  PostSecondSlide,
   PostSecondSlideWrapper,
   TitleSecondSlide,
   TitleSlide,
@@ -20,7 +20,7 @@ export default function SlideSecond() {
       <BunnerFlex>
         <BunnerImgSecond src={swiper1} alt="swiper" loading="lazy" />
         <PostSecondSlideWrapper>
-          <Post> {t('main.slideTwo.text')} </Post>
+          <PostSecondSlide> {t('main.slideTwo.text')} </PostSecondSlide>
           <LinkButton link="/shop">{t('main.slideTwo.btnText')} </LinkButton>
         </PostSecondSlideWrapper>
       </BunnerFlex>
