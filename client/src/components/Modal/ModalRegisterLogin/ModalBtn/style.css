@@ -1,0 +1,46 @@
+.btnStyle {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--socialSvgColor);
+}
+
+.arrow {
+  font-size: 30px;
+  color: var(--socialSvgColor);
+  transform: translateX(-10%);
+  transition-duration: 250ms;
+}
+
+.decoration {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+
+.decoration::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--socialSvgColor);
+  top: -6px;
+  left: 15px;
+  opacity: 0.5;
+  transition-duration: 250ms;
+
+}
+
+.btnStyle:hover .arrow {
+  transform: translateX(20%);
+}
+.btnStyle:hover .decoration::before {
+  opacity: 1;
+}
