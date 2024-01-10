@@ -5,10 +5,10 @@ import { ButtonStyle } from "./Button.style";
 
 
 const Button = (props) => {
-  const {type = "button", boxView, isTransparent=false, underlineView, radius = "none", children, deleteProduct, click=() => {}, ...restProps} = props
+  const {type = "button", boxView, isTransparent=false, underlineView, fontSize = "20px", padding = "12px 24px", radius = "none", children, deleteProduct, click=() => {}, ...restProps} = props
   ///...restProps == {.......}
   return (
-    <ButtonStyle radius={radius} isTransparent={isTransparent} onClick={click} type={type} {...restProps} deleteproduct={deleteProduct}>{children}</ButtonStyle>
+    <ButtonStyle fontSize={fontSize} padding={padding} radius={radius} isTransparent={isTransparent} onClick={click} type={type} {...restProps} deleteproduct={deleteProduct}>{children}</ButtonStyle>
   )
 }
 

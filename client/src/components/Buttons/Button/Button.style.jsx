@@ -15,4 +15,9 @@ export const ButtonStyle = styled.button`
     background: #fff;
     color: var(--accentColorText);
   }
+
+  @media (width < 570px) {
+    padding: ${props => (props.padding ? '9px 20px': '')};
+    font-size: ${props => (props.fontSize ? '16px': '')};
+  }
 `;

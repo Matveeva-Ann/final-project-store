@@ -4,7 +4,8 @@ import 'i18n/i18n.js';
 import GoogleMaps from '../components/GoogleMaps/GoogleMaps';
 
 import FooterContacts from 'components/Footer/components/FooterContacts';
-import { FindUsStyle, FindUsTitle, FindUsWrapper } from './FindUs.style';
+import { FindUsStyle, FindUsWrapper } from './FindUs.style';
+import {TitleTwo} from 'components/common-styles/ProjectTitles/ProjectTitles.style';
 
 
 export default function FindUs() {
@@ -12,7 +13,7 @@ export default function FindUs() {
   const { t } = useTranslation();
   return (
     <FindUsStyle>
-      <FindUsTitle>{t('main.findUs.title')}</FindUsTitle>
+      <TitleTwo>{t('main.findUs.title')}</TitleTwo>
       <FindUsWrapper>
         <FooterContacts />
         <GoogleMaps />
