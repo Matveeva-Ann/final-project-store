@@ -13,12 +13,14 @@ export default function DeliveryPayment() {
   const arrLinks = [
     {
       link: '',
-      name: 'Головна',
+      name: t('breadCrumbs.home'),
+      separator: '/',
     },
   ];
+  const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={'/ Доставка та оплата'}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.delivery')}`}></BreadCrumbs>
       <ProjectTitles>{t('pageDeliveryPayment.post.title')} </ProjectTitles>
       <ProjectTitles>{t('pageDeliveryPayment.post.titleAbout')}</ProjectTitles>
       <CommonTextAboutStyles>{t('pageDeliveryPayment.post.postAbout')}</CommonTextAboutStyles>

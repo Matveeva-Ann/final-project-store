@@ -12,12 +12,14 @@ export default function FindUs() {
   const arrLinks = [
     {
       link: '',
-      name: 'Головна',
+      name: t('breadCrumbs.home'),
+      separator: '/',
     },
   ];
+  const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={'/ Де нас знайти'}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.findUs')}`}></BreadCrumbs>
       <FindUsStyle>
         <FindUsTitle>{t('main.findUs.title')}</FindUsTitle>
         <FindUsWrapper>

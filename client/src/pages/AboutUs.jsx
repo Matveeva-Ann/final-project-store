@@ -9,13 +9,15 @@ export default function AboutUs() {
   const arrLinks = [
     {
       link: '',
-      name: 'Головна',
+      name: t('breadCrumbs.home'),
+      separator: '/',
     },
   ];
+  const separator = '/';
+
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={'/ Про нас'}></BreadCrumbs>
-
+      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.aboutUs')}`}></BreadCrumbs>
       <AboutUsWrapper>
         <ProjectTitles>{t('pageAboutUs.post.title')}</ProjectTitles>
         <ImageDecor src={Decor} loading="lazy" alt="decor" />

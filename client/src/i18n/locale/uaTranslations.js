@@ -133,6 +133,15 @@ const uaTranslations = {
         },
       },
     },
+    breadCrumbs: {
+      home: 'Головна',
+      catalog: 'Каталог',
+      promotions: 'Акції',
+      aboutUs: 'Про нас',
+      blog: 'Блог',
+      delivery: 'Доставка та оплата',
+      findUs: 'Де нас знайти?',
+    },
   },
 };
 
