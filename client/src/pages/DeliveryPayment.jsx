@@ -6,11 +6,21 @@ import Meest from '../img/meest.png';
 import Crocus from '../img/CROCUS-2.png';
 import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles.jsx';
 import CommonTextAboutStyles from 'components/common-styles/CommonTextAboutStyles/CommonTextAboutStyles';
+import BreadCrumbs from 'breadCrumbs/breadCrumbs';
 export default function DeliveryPayment() {
   const { t } = useTranslation();
   // {t('main.slideTree.text')}
+  const arrLinks = [
+    {
+      link: '',
+      name: t('breadCrumbs.home'),
+      separator: '/',
+    },
+  ];
+  const separator = '/';
   return (
     <>
+      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.delivery')}`}></BreadCrumbs>
       <ProjectTitles>{t('pageDeliveryPayment.post.title')} </ProjectTitles>
       <ProjectTitles>{t('pageDeliveryPayment.post.titleAbout')}</ProjectTitles>
       <CommonTextAboutStyles>{t('pageDeliveryPayment.post.postAbout')}</CommonTextAboutStyles>
