@@ -1,0 +1,37 @@
+.labelStyle {
+  cursor: pointer;
+  padding: 5px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.labelStyle::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--socialSvgColor);
+  margin-right: 15px;
+}
+.labelStyle::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--socialSvgColor);
+  top: 11px;
+  left: 4px;
+  transform: scale(0);
+  transition-duration: 250ms;
+}
+
+.inputStyle:checked ~ .labelStyle::after {
+  transform: scale(1);
+}
+
+.inputStyle {
+  display: none;
+}

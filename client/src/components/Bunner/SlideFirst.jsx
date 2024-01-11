@@ -16,7 +16,7 @@ export default function SlideFirst() {
           <Post>{t('main.slideFirst.text') }</Post>
           <ButtonWrapper>
             <LinkButton link='/shop'>{t('main.slideFirst.buttonCatalog') }</LinkButton>
-            <LinkButton buttonStyle='transparent' link='/actions'>{t('main.slideFirst.buttonSale') }</LinkButton>
+            <LinkButton background ='transparent' link='/actions'>{t('main.slideFirst.buttonSale') }</LinkButton>
           </ButtonWrapper>
         </BunnerPost>
         <BunnerImg src={Bunnerbg} loading="lazy" alt="bunner" />

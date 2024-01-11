@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Slide } from 'react-toastify';
 
 export const BunnerSection = styled.section`
   margin: 50px auto 150px;
@@ -154,6 +155,39 @@ export const PostSecondSlideWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+export const PostSecondSlide = styled.p`
+   color: var(--textColorSecondary);
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: start;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  margin-top: 10px;
+  animation: textAnimation2 3s linear;
+
+  @media (width<1200px) {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media (width<1025px) {
+    display: none;
+  }
+  @keyframes textAnimation2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+`
 
 export const BunnerImgSecond = styled.img`
   position: relative;

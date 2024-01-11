@@ -78,7 +78,7 @@ const uaTranslations = {
       },
       categorys: {},
 
-      contacts: {
+    
         contacts: {
           workHours: 'Графік роботи:',
           timeRanges: 'Пн-Сб з 10:00 до 18:00',
@@ -88,8 +88,8 @@ const uaTranslations = {
           socialMedia: 'Ми у соц мережах:',
         },
         allRightsReserved: 'Всі права захищені',
-      },
-      allRightsReserved: 'Всі права захищені',
+    
+     
       catalogSection: {
         titleCatalog: 'Каталог',
       },

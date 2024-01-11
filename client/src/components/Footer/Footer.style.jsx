@@ -13,7 +13,15 @@ export const FooterStyle = styled.footer`
 export const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (width < 770px) {
+    flex-direction: column;
+  }
 `;
+export const Category = styled.div`
+@media (width < 1150px) {
+  display:none;
+}
+`
 export const FooterCopyright = styled.div`
   display: flex;
   justify-content: space-around;
@@ -27,12 +35,13 @@ export const FooterContact = styled.ul`
     font-weight: 400;
     list-style-type: none;
     color: var(--textColor);
+    max-width: 300px;
   }
 
-  li:nth-child(odd) {
+  li:nth-of-type(odd) {
     padding-bottom: 15px;
   }
-  li:nth-child(even) {
+  li:nth-of-type(even) {
     padding-bottom: 20px;
   }
 `;
