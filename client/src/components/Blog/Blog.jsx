@@ -1,4 +1,3 @@
-// import 'Blog.style.jsx'
 import ProjectCaptions from 'components/common-styles/ProjectCaptions/ProjectCaptions';
 import { useTranslation } from 'react-i18next';
 import { BlogItem, BlogWrapper, ImgBlog } from './Blog.style';
@@ -8,6 +7,7 @@ import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTe
 import { Link } from 'react-router-dom';
 function Blog() {
   const { t } = useTranslation();
+
   return (
     <>
       <ProjectCaptions>{t('main.blog.title')}</ProjectCaptions>
