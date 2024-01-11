@@ -27,7 +27,8 @@ exports.createCustomer = (req, res, next) => {
   }
 
   Customer.findOne({
-    $or: [{ email: req.body.email }, { login: req.body.login }]
+    // $or: [{ email: req.body.email }, { login: req.body.login }]
+    $or: [{ email: req.body.email }]
   })
     .then(customer => {
       if (customer) {
@@ -37,11 +38,11 @@ exports.createCustomer = (req, res, next) => {
             .json({ message: `Email ${customer.email} already exists"` });
         }
 
-        if (customer.login === req.body.login) {
-          return res
-            .status(400)
-            .json({ message: `Login ${customer.login} already exists` });
-        }
+        // if (customer.login === req.body.login) {
+        //   return res
+        //     .status(400)
+        //     .json({ message: `Login ${customer.login} already exists` });
+        // }
       }
 
       // Create query object for qustomer for saving him to DB
@@ -90,7 +91,8 @@ exports.loginCustomer = async (req, res, next) => {
 
   // Find customer by email
   Customer.findOne({
-    $or: [{ email: loginOrEmail }, { login: loginOrEmail }]
+    // $or: [{ email: loginOrEmail }, { login: loginOrEmail }]
+    $or: [{ email: loginOrEmail }]
   })
     .then(customer => {
       // Check for customer
@@ -105,8 +107,9 @@ exports.loginCustomer = async (req, res, next) => {
           // Customer Matched
           const payload = {
             id: customer.id,
-            firstName: customer.firstName,
-            lastName: customer.lastName,
+            userName: customer.userName, // додала самостійно
+            // firstName: customer.firstName,
+            // lastName: customer.lastName,
             isAdmin: customer.isAdmin
           }; // Create JWT Payload
 

@@ -15,7 +15,7 @@ export const ModalBg = styled.div`
 `;
 export const ModalBody = styled.div`
   position: relative;
-  padding: 50px;
+  padding: 35px 50px 50px;
   background-color: #e4d9c3e0;
   backdrop-filter: blur(25px);
   position: relative;

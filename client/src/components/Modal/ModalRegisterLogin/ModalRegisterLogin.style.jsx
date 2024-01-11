@@ -5,7 +5,7 @@ export const BtnWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 `;
 
 export const Btn = styled.button`
@@ -22,8 +22,8 @@ export const Btn = styled.button`
 export const FieldStyle = styled(Field)`
   width: calc(100% - 30px);
   padding: 5px 15px;
-  margin-bottom: 15px;
-  height: 40px;
+  margin-bottom: 25px;
+  height: 35px;
   background-color: transparent;
   border: 1px solid var(--socialSvgColor);
   outline: none;
@@ -47,17 +47,25 @@ export const FormWrapper = styled.div`
   animation: modalContent 250ms linear;
 
   @keyframes modalContent {
-    0%{
+    0% {
       transform: scale(0.97);
       opacity: 0;
     }
-    80%{
+    80% {
       transform: scale(1);
       opacity: 0.3;
     }
-    100%{
+    100% {
       transform: scale(1);
       opacity: 1;
     }
   }
+`;
+
+export const ErrorMessageStyle = styled.p`
+  position: absolute;
+  top: 48%;
+  left: 10px;
+  color: red;
+  font-size: 14px;
 `;
