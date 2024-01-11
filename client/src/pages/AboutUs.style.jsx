@@ -1,15 +1,7 @@
 import styled from '@emotion/styled';
 
 export const AboutUsWrapper = styled.div`
-  display: flex;
-  overflow: hidden;
-  @media (width<1025px) {
-    flex-direction: column;
-  }
-`;
-export const AboutUsBlock = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
   text-align: center;
 `;
@@ -20,19 +12,10 @@ export const ImageAboutUs = styled.img`
   z-index: 1;
   position: relative;
   @media (width<1025px) {
-    width: 200px;
-  }
-`;
-export const ColoredElementAbout = styled.div`
-  position: absolute;
-  width: 800px;
-  height: 1000px;
-  background-color: var(--articleColorBg);
-
-  top: 5px;
-  right: 0;
-  z-index: -1;
-  @media (width<1025px) {
     display: none;
   }
+`;
+export const ImageDecor = styled.img`
+  width: 100%;
+  height: auto;
 `;

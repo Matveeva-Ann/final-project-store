@@ -1,23 +1,29 @@
-import { AboutUsWrapper, ImageAboutUs, AboutUsBlock, ColoredElementAbout } from './AboutUs.style';
-import Public from '../img/public.png';
-import Swiper1 from '../img/swiper1.png';
+import { AboutUsWrapper, ImageDecor } from './AboutUs.style';
 import { useTranslation } from 'react-i18next';
 import ProjectTitles from 'components/common-styles/ProjectTitles/ProjectTitles';
 import CommonTextAboutStyles from 'components/common-styles/CommonTextAboutStyles/CommonTextAboutStyles';
-
+import Decor from '../img/decor.jpg';
+import BreadCrumbs from 'breadCrumbs/breadCrumbs';
 export default function AboutUs() {
   const { t } = useTranslation();
+  const arrLinks = [
+    {
+      link: '',
+      name: t('breadCrumbs.home'),
+      separator: '/',
+    },
+  ];
+  const separator = '/';
+
   return (
     <>
-      <ProjectTitles>{t('pageAboutUs.post.title')}</ProjectTitles>
+      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.aboutUs')}`}></BreadCrumbs>
       <AboutUsWrapper>
-        <AboutUsBlock>
-          <CommonTextAboutStyles>{t('pageAboutUs.post.textOne')}</CommonTextAboutStyles>
-          <CommonTextAboutStyles> {t('pageAboutUs.post.textTwo')}</CommonTextAboutStyles>
-          <ImageAboutUs src={Swiper1} loading="lazy" alt="aboutUs" />
-        </AboutUsBlock>
-        <ColoredElementAbout />
-        <ImageAboutUs src={Public} loading="lazy" alt="magazine" />
+        <ProjectTitles>{t('pageAboutUs.post.title')}</ProjectTitles>
+        <ImageDecor src={Decor} loading="lazy" alt="decor" />
+
+        <CommonTextAboutStyles>{t('pageAboutUs.post.textOne')}</CommonTextAboutStyles>
+        <CommonTextAboutStyles> {t('pageAboutUs.post.textTwo')}</CommonTextAboutStyles>
       </AboutUsWrapper>
     </>
   );
