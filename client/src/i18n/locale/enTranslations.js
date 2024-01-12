@@ -30,9 +30,17 @@ const enTranslations = {
       },
       news: {
         titleNews: 'New products',
+        buttonAll: 'View all',
       },
       catalogSection: {
         titleCatalog: 'Product catalog',
+        catalog: {
+          oneSection: 'Decorative baskets',
+          twoSection: 'Vases and planters',
+          threeSection: 'Textiles',
+          fourSection: 'Kitchen essentials',
+        },
+        buttonAll: 'View all',
       },
       publicity: {
         postOne:
@@ -72,6 +80,47 @@ const enTranslations = {
         socialMedia: 'We are in social media:',
       },
       allRightsReserved: 'All rights reserved',
+    },
+    pageAboutUs: {
+      post: {
+        title: 'About us',
+        textOne:
+          'Welcome to Crocus Home Decor – your favorite home decor store! We are the place where your decorative dreams come to life, and your life transforms into a fairytale.',
+        textTwo:
+          'At Crocus Decor, we offer a wide range of decorative items to help you transform any space into a beautiful and harmonious environment. From elegant furniture and lighting to enchanting accessories, we have everything you need to complement your style and create an unforgettable atmosphere.',
+      },
+    },
+    pageDeliveryPayment: {
+      post: {
+        title: 'Delivery and Payment',
+        titleAbout: 'Order Delivery',
+        postAbout:
+          'Our company offers delivery by courier services of your choice across Ukraine! Please note that currently, delivery is only available to open branches in cities without active combat or temporary occupation.',
+        blockPost: {
+          post1: 'Self-pickup with prepayment and cash on delivery',
+          post2:
+            'To the branch, with prepayment and cash on delivery. Post offices and Address delivery – with prepayment',
+          post3: 'To the branch, with prepayment and cash on delivery',
+        },
+        list: {
+          li1: 'whether the option to pay for purchases with your credit card online is available;',
+          li2: 'whether there are sufficient funds on your credit card to cover your order;',
+          li3: 'whether your credit card has not expired.',
+        },
+        titlePay: 'Payment Methods',
+        titlePostTwo: 'With any bank card on the website',
+        postPay:
+          'When placing an order, you can make a payment using a Visa or MasterCard directly on the website. Livesta Cosmetics guarantees the security and protection of online payments. All credit card transactions are carried out in accordance with the requirements of VISA International and MasterCard payment systems. The personal information provided by you (name, phone, credit card number) is confidential and not disclosed. Your card details are transmitted only in encrypted form and are not stored on our web server. Before making a payment, please check:',
+
+        titleReceipt: 'Payment upon Order Receipt',
+        postReceipt: 'Payment upon receipt is possible when choosing cash on delivery during delivery processing',
+        payList: {
+          li1: "The cost of the 'cash on delivery' service for the 'Nova Poshta' transport company is 20 UAH + 2% of the order amount.",
+          li2: "The cost of the 'cash on delivery' service for the 'UkrPoshta' transport company is 1% of the order amount, but not less than 10 UAH.",
+          li3: 'Ordering cash on delivery is available from the Leader status and above.',
+          li4: 'The feature is only available in the first three weeks of the catalog. In the fourth week of order processing, only prepayment is accepted.',
+        },
+      },
     },
 
     breadCrumbs: {
