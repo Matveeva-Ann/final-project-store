@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './Layout';
 import { lazy, Suspense } from 'react';
 
@@ -9,9 +9,8 @@ const AboutUsPage = lazy(() => import('./pages/AboutUs'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const DeliveryPaymentPage = lazy(() => import('./pages/DeliveryPayment'));
 const FindUsPage = lazy(() => import('./pages/FindUs'));
-
+const AdminLogin = lazy(() => import('./pages/AdminLogin'));
 export default function AppRoutes() {
-  
   //в fallback={<div>Loading...</div>} замість  <div>Loading...</div> треба буде
   // вставити компонент переходу між сторінками(завантажувач)
   return (
@@ -22,6 +21,7 @@ export default function AppRoutes() {
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <HomePage></HomePage>
+              {/* <Navigate to="/" replace /> */}
             </Suspense>
           }
         />
@@ -73,6 +73,15 @@ export default function AppRoutes() {
             </Suspense>
           }
         />
+        <Route
+          path="/admin"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <AdminLogin></AdminLogin>
+            </Suspense>
+          }
+        />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   );

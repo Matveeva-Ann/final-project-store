@@ -18,12 +18,13 @@ const initValue = {
 export default function ModalRegister() {
   const handelSubmit = (values, { resetForm }) => {
     console.log(values);
-    if (values.password !== values.repeatPassword || !values.agree) {
+    if (values.password !== values.repeatPassword) {
       return;
     }
     delete values.repeatPassword;
     delete values.agree;
     values.isAdmin = false;
+    values.agree = true;
     values.login = 'swdqdde';
     values.lastName = 'ascascasc';
     values.firstName = 'ascacacasc';
@@ -62,13 +63,13 @@ export default function ModalRegister() {
         <Formik initialValues={initValue} onSubmit={handelSubmit} validationSchema={SchemaRegister}>
           <FormStyle action="">
             {fieldsData.map(fieldData => (
-              <div style={{ position: 'relative'}} key={fieldData.name}>
+              <div style={{ position: 'relative' }} key={fieldData.name}>
                 <ModalField fieldData={fieldData}></ModalField>
               </div>
             ))}
 
             <div style={{ position: 'relative', margin: '-20px 0 0 0' }}>
-              <Field className="inputStyle" name="agree" type="checkbox" id="myCheckbox" checked/>
+              <Field className="inputStyle" name="agree" type="checkbox" id="myCheckbox" checked />
               <label className="labelStyle" htmlFor="myCheckbox" style={{ margin: '16px 0' }}>
                 Я погоджуюсь з <LinkStyle href="url_to_terms"> Правилами користування</LinkStyle>
               </label>
