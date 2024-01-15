@@ -13,7 +13,7 @@ export default function BlogPage() {
   const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.blog')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.blog')}`}></BreadCrumbs>
       <p>Блог</p>
     </>
   );

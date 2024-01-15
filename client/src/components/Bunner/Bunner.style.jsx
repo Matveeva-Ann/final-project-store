@@ -164,7 +164,6 @@ export const PostSecondSlide = styled.p`
   margin-bottom: 30px;
   padding-left: 10px;
   margin-top: 10px;
-  animation: textAnimation2 3s linear;
 
   @media (width<1200px) {
     margin-bottom: 20px;
@@ -174,19 +173,6 @@ export const PostSecondSlide = styled.p`
   @media (width<1025px) {
     display: none;
   }
-  @keyframes textAnimation2 {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-  60% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1) translate(0%, 0%);
-    opacity: 1;
-  }
-}
 `
 
 export const BunnerImgSecond = styled.img`
@@ -260,7 +246,6 @@ export const PostThirdSlide = styled.p`
   margin-bottom: 25px;
   margin-right: -20px;
   padding-left: 10px;
-  animation: textAnimation 3s ease-in-out;
   z-index: 1;
   @media (width<1200px) {
     margin-right: -30px;
@@ -268,17 +253,6 @@ export const PostThirdSlide = styled.p`
   }
   @media (width<1025px) {
     display: none;
-  }
-
-  @keyframes textAnimation {
-    0% {
-      opacity: 0;
-      transform: scale(0.6);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
   }
 `;
 

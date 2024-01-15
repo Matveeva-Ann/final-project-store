@@ -21,6 +21,7 @@ export const Btn = styled.button`
 
 export const FieldStyle = styled(Field)`
   width: calc(100% - 30px);
+  min-width: 350px;
   padding: 5px 15px;
   margin-bottom: 25px;
   height: 35px;
@@ -31,6 +32,9 @@ export const FieldStyle = styled(Field)`
   &::placeholder {
     color: var(--socialSvgColor);
     font-size: 15px;
+  }
+  @media (width < 520px) {
+    min-width: 285px;
   }
 `;
 

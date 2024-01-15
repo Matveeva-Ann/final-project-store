@@ -13,7 +13,7 @@ export default function Catalog() {
   const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.catalog')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.catalog')}`}></BreadCrumbs>
       <p>Каталог товарів</p>
     </>
   );

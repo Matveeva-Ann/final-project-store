@@ -17,7 +17,7 @@ export default function AboutUs() {
 
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.aboutUs')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.aboutUs')}`}></BreadCrumbs>
       <AboutUsWrapper>
         <ProjectTitles>{t('pageAboutUs.post.title')}</ProjectTitles>
         <ImageDecor src={Decor} loading="lazy" alt="decor" />

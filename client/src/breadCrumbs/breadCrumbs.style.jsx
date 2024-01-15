@@ -19,3 +19,7 @@ export const BreadCrumbsItemName = styled.span`
   font-size: 18px;
   font-weight: 500;
 `;
+
+export const Separator = styled.span`
+  margin: 0 10px;
+`

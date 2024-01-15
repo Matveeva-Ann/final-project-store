@@ -13,7 +13,7 @@ export default function Actions() {
   const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.promotions')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.promotions')}`}></BreadCrumbs>
       <p>Акції</p>
     </>
   );
