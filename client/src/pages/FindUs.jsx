@@ -7,7 +7,7 @@ import FooterContacts from 'components/Footer/components/FooterContacts';
 
 import { FindUsStyle, FindUsWrapper } from './FindUs.style';
 import {TitleTwo} from 'components/common-styles/ProjectTitles/ProjectTitles.style';
-
+import BreadCrumbs from '../breadCrumbs/breadCrumbs';
 export default function FindUs() {
   const { t } = useTranslation();
   const arrLinks = [
