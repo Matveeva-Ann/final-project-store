@@ -18,14 +18,15 @@ const initValue = {
 export default function ModalRegister() {
   const handelSubmit = (values, { resetForm }) => {
     console.log(values);
-    if (values.password !== values.repeatPassword || !values.agree) {
+    if (values.password !== values.repeatPassword ) {
       return;
     }
     delete values.repeatPassword;
     delete values.agree;
     values.isAdmin = false;
-    values.login = 'swdqdde';
-    values.lastName = 'ascascasc';
+    values.agree = true;
+    values.login = 'sdqdde';
+    values.lastName = 'asccasc';
     values.firstName = 'ascacacasc';
     sendRegisterData(values, resetForm);
   };
@@ -39,12 +40,10 @@ export default function ModalRegister() {
         body: JSON.stringify(data),
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer YOUR_ACCESS_TOKEN',
-          'Custom-Header': 'custom-value',
-          Accept: 'application/json',
         },
+        
       });
-
+      console.log(response);
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }

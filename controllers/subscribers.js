@@ -59,7 +59,7 @@ exports.addSubscriber = (req, res, next) => {
         })
         .catch(err =>
           res.status(400).json({
-            message: `Error happened on server: "${err}" `
+            message: `Error happened on server1: "${err}" `
           })
         );
     } else {
@@ -83,7 +83,7 @@ exports.addSubscriber = (req, res, next) => {
         })
         .catch(err =>
           res.status(400).json({
-            message: `Error happened on server: "${err}" `
+            message: `Error happened on server2: "${err}" `
           })
         );
     }
@@ -139,14 +139,14 @@ exports.updateSubscriberById = (req, res, next) => {
           })
           .catch(err =>
             res.status(400).json({
-              message: `Error happened on server: "${err}" `
+              message: `Error happened on server3: "${err}" `
             })
           );
       }
     })
     .catch(err =>
       res.status(400).json({
-        message: `Error happened on server: "${err}" `
+        message: `Error happened on server4: "${err}" `
       })
     );
 };
@@ -200,14 +200,14 @@ exports.updateSubscriberByEmail = (req, res, next) => {
           })
           .catch(err =>
             res.status(400).json({
-              message: `Error happened on server: "${err}" `
+              message: `Error happened on server5: "${err}" `
             })
           );
       }
     })
     .catch(err =>
       res.status(400).json({
-        message: `Error happened on server: "${err}" `
+        message: `Error happened on server6: "${err}" `
       })
     );
 };
@@ -217,7 +217,7 @@ exports.getSubscribers = (req, res, next) => {
     .then(subscribers => res.json(subscribers))
     .catch(err =>
       res.status(400).json({
-        message: `Error happened on server: "${err}" `
+        message: `Error happened on server7: "${err}" `
       })
     );
 };
@@ -235,7 +235,7 @@ exports.getSubscriber = (req, res, next) => {
     })
     .catch(err =>
       res.status(400).json({
-        message: `Error happened on server: "${err}" `
+        message: `Error happened on server8: "${err}" `
       })
     );
 };

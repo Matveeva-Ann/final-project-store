@@ -1,4 +1,4 @@
-import { ErrorMessage} from 'formik';
+import { ErrorMessage, useField } from 'formik';
 import React, { useState } from 'react';
 
 import {Input,InputWrapper,Label,Error,FormikWrapper } from '../../EmailNewsletter/EmailNewsletter.style';
@@ -6,30 +6,28 @@ import {Input,InputWrapper,Label,Error,FormikWrapper } from '../../EmailNewslett
 export default function FieldWrapper({ name, children }) {
 
   const [focused, setFocused] = useState(false);
-  const [value, setValue] = useState('');
+  const [field, meta] = useField(name);
 
   const handleFocus = () => setFocused(true);
 
   const handleBlur = () => {
-    if (!value) {
+    if (!field.value) {
       setFocused(false);
     }
   }
 
-  const handleChange = e => setValue(e.target.value);
-
   return (
     <FormikWrapper>
-      <InputWrapper focused={focused} value={value}>
-        <Label className={value ? 'active' : ''} htmlFor="email">{children}</Label>
+      <InputWrapper focused={focused} value={field.value}>
+        <Label className={field.value ? 'active' : ''} htmlFor={name}>{children}</Label>
         <Input 
         id={name} 
         name={name}
-        value={value}
-        onChange={handleChange}
+        value={field.value}
+        onChange={field.onChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        type="email"
+        type="text"
         required
         />
       </InputWrapper>
