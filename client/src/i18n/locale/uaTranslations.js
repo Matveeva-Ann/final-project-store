@@ -48,8 +48,8 @@ const uaTranslations = {
       },
       blog: {
         title: 'Блог',
-        postOne: 'Як перетворити кухню, стилі та організація простору. 25.12.23',
-        postTwo: 'Ідеї для оформлення вітальні. 08.01.24',
+        postOne: 'Як перетворити кухню, стилі та організація простору.',
+        postTwo: 'Ідеї для оформлення вітальні.',
       },
       findUs: {
         title: 'Де нас знайти?',
@@ -78,18 +78,18 @@ const uaTranslations = {
       },
       categorys: {},
 
-    
-        contacts: {
-          workHours: 'Графік роботи:',
-          timeRanges: 'Пн-Сб з 10:00 до 18:00',
-          address: 'Адреса:',
-          addressLink: 'Проспект Незалежності, 140-Б, Ізмаїл, Одеська область',
-          phone: 'Телефон:',
-          socialMedia: 'Ми у соц мережах:',
-        },
-        allRightsReserved: 'Всі права захищені',
-    
-     
+
+      contacts: {
+        workHours: 'Графік роботи:',
+        timeRanges: 'Пн-Сб з 10:00 до 18:00',
+        address: 'Адреса:',
+        addressLink: 'Проспект Незалежності, 140-Б, Ізмаїл, Одеська область',
+        phone: 'Телефон:',
+        socialMedia: 'Ми у соц мережах:',
+      },
+      allRightsReserved: 'Всі права захищені',
+
+
       catalogSection: {
         titleCatalog: 'Каталог',
       },
@@ -142,6 +142,32 @@ const uaTranslations = {
       delivery: 'Доставка та оплата',
       findUs: 'Де нас знайти?',
     },
+    modals: {
+      login: 'Вхід',
+      register: 'Реєстрація',
+      validation: {
+        required: '*Це поле обов’язкове для заповнення',
+        email: '*Введіть коректну електронну пошту',
+        phone: '*Введіть коректний номер телефону',
+        password: 'Пароль має містити від 7 до 30 символів',
+        repeatPassword: 'Паролі повинні співпадати',
+        agree: '*Треба погодитись з правилами користування',
+        duplicateEmail: '*Користувач з такою поштою вже зареєстрований'
+      },
+      modalRegister: {
+        agree: 'Я погоджуюсь з',
+        rules: 'Правилами користування',
+        registerBtn: 'Зареєструватись',
+      },
+      placeholders: {
+        name: '*Ім’я',
+        email: '*Електронна пошта',
+        phone: '*Телефон',
+        password: '*Пароль',
+        repeatPassword: '*Повторити пароль',
+      },
+
+    }
   },
 };
 

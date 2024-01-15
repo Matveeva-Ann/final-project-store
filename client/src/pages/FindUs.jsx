@@ -20,7 +20,7 @@ export default function FindUs() {
   const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.findUs')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.findUs')}`}></BreadCrumbs>
       <FindUsStyle>
       <TitleTwo>{t('main.findUs.title')}</TitleTwo>
       <FindUsWrapper>
