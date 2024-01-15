@@ -6,6 +6,9 @@ export const FooterNavList = styled.ul`
     flex-direction: column;
     padding: 0;
     gap:15px;
+    @media (width < 1150px) {
+    order: 2;
+    }
 `
 export const FooterNavItem = styled.li`
     display:block;

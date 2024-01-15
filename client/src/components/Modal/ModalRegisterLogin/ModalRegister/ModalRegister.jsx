@@ -14,6 +14,7 @@ export default function ModalRegister() {
   const { t } = useTranslation();
 
   const handelSubmit = (values, { resetForm }) => {
+
     if (values.password !== values.repeatPassword) {
       return;
     }
@@ -22,6 +23,7 @@ export default function ModalRegister() {
     values.isAdmin = false;
     sendRegisterData(values, setErrStatus, resetForm);
   };
+
 
   return (
     <>
