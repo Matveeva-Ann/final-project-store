@@ -6,7 +6,7 @@ export const CatalogWrapper = styled.section`
 `;
 export const Image = styled.img`
   display: block;
-  height: 340px;
+  height: 290px;
   transition: filter 0.3s ease;
   :hover {
     /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); */

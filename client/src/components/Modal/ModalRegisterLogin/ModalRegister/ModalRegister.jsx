@@ -8,13 +8,11 @@ import { fieldsData, initValue, SchemaRegister, sendRegisterData } from './helpe
 import './style.css';
 import { useTranslation } from 'react-i18next';
 
-
 export default function ModalRegister() {
   const [errStatus, setErrStatus] = useState(false);
   const { t } = useTranslation();
 
   const handelSubmit = (values, { resetForm }) => {
-
     if (values.password !== values.repeatPassword) {
       return;
     }
@@ -23,7 +21,6 @@ export default function ModalRegister() {
     values.isAdmin = false;
     sendRegisterData(values, setErrStatus, resetForm);
   };
-
 
   return (
     <>
