@@ -35,3 +35,9 @@
 .inputStyle {
   display: none;
 }
+
+@media (width < 390px) {
+  .labelStyle::before {
+    margin-right: 10px;
+  }
+}

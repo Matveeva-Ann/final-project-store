@@ -20,7 +20,7 @@ export default function DeliveryPayment() {
   const separator = '/';
   return (
     <>
-      <BreadCrumbs arrLinks={arrLinks} name={`${separator} ${t('breadCrumbs.delivery')}`}></BreadCrumbs>
+      <BreadCrumbs arrLinks={arrLinks} separator={separator} name={`${t('breadCrumbs.delivery')}`}></BreadCrumbs>
       <ProjectTitles>{t('pageDeliveryPayment.post.title')} </ProjectTitles>
       <ProjectTitles>{t('pageDeliveryPayment.post.titleAbout')}</ProjectTitles>
       <CommonTextAboutStyles>{t('pageDeliveryPayment.post.postAbout')}</CommonTextAboutStyles>

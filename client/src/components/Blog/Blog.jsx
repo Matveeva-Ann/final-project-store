@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { BlogItem, BlogWrapper, ImgBlog } from './Blog.style';
 import Kitchen from '../../img/kitchen.jpg';
 import Living_room from '../../img/living_room.jpg';
-import CommonTextStyles from 'components/common-styles/CommonTextStyles/CommonTextStyles';
 import { Link } from 'react-router-dom';
+import BlogTitle from 'components/common-styles/BlogTitle/BlogTitle';
 function Blog() {
   const { t } = useTranslation();
 
@@ -15,13 +15,13 @@ function Blog() {
         <BlogItem>
           <Link style={{ textDecoration: 'none' }} to="/">
             <ImgBlog src={Kitchen} loading="lazy" alt="kitchen"></ImgBlog>
-            <CommonTextStyles>{t('main.blog.postOne')}</CommonTextStyles>
+            <BlogTitle date={'25.07.23'}>{t('main.blog.postOne')}</BlogTitle>
           </Link>
         </BlogItem>
         <BlogItem>
           <Link style={{ textDecoration: 'none' }} to="/">
             <ImgBlog src={Living_room} loading="lazy" alt="room"></ImgBlog>
-            <CommonTextStyles>{t('main.blog.postTwo')}</CommonTextStyles>
+            <BlogTitle date={'08.01.24'}>{t('main.blog.postTwo')}</BlogTitle>
           </Link>
         </BlogItem>
       </BlogWrapper>

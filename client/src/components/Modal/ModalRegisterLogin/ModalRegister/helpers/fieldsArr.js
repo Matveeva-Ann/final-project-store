@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { PatternFormat } from "react-number-format";
 
 const PhoneInput = ({ field, ...props }) => {
@@ -13,33 +14,36 @@ const PhoneInput = ({ field, ...props }) => {
   );
 }
 
+const translate = key => {
+  return i18next.t(key);
+};
 
 const fieldsData = [
   {
     type: 'text',
     name: 'userName',
-    placeholder: '*Name',
+    placeholder:  translate('modals.placeholders.name'),
   },
   {
     type: 'text',
     name: 'email',
-    placeholder: '*Email',
+    placeholder: translate('modals.placeholders.email'),
   },
   {
     type: 'text',
     name: 'phone',
-    placeholder: '*Phone',
+    placeholder: translate('modals.placeholders.phone'),
     component: PhoneInput,
   },
   {
     type: 'password',
     name: 'password',
-    placeholder: '*Password',
+    placeholder: translate('modals.placeholders.password'),
   },
   {
     type: 'password',
     name: 'repeatPassword',
-    placeholder: '*Repeat password',
+    placeholder: translate('modals.placeholders.repeatPassword'),
   },
 ];
 

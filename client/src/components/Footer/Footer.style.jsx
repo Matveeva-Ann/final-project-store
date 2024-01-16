@@ -30,6 +30,7 @@ export const FooterContact = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 0;
+  order: 3;
   li {
     font-size: 18px;
     font-weight: 400;

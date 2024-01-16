@@ -27,13 +27,12 @@ export const HeaderStyle = styled.header`
 
 export const LogoImg = styled.img`
   max-height: ${({ size }) => (size === 'big' ? '150px' : '95px')};
-  padding: 0 10px;
+  padding:  ${({ size }) => (size === 'big' ? '0' : '10px 0')};
   @media (width<1150px) {
-    max-height: 60px;
-    order: ${({disposition}) => (disposition === 'logoFooter' ? '1' : '')};
+    max-height: ${({ size }) => (size === 'big' ? '100px' : '60px')};
   }
   @media (width < 450px) {
-    max-height: 45px;
+    max-height: ${({ size }) => (size === 'big' ? '80px' : '50px')};
     padding: 0 5px;
   }
 `;

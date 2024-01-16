@@ -50,8 +50,8 @@ const enTranslations = {
       },
       blog: {
         title: 'Blog',
-        postOne: 'How to transform the kitchen, styles, and space organization. 25.12.23',
-        postTwo: 'Ideas for decorating the living room. 08.01.24',
+        postOne: 'How to transform the kitchen, styles, and space organization.',
+        postTwo: 'Ideas for decorating the living room.',
       },
       findUs: {
         title: 'Where to find us?',
@@ -132,6 +132,30 @@ const enTranslations = {
       delivery: 'Delivery and payment',
       findUs: 'Where to find us?',
     },
+    modals: {
+      login: 'Log In',
+      register: 'Register',
+      validation: {
+        required: "*This field is required",
+        email: "*Enter a valid email",
+        phone: "*Enter a valid phone number",
+        password: "*Password must be between 7 and 30 characters",
+        repeatPassword: "*Passwords must match",
+        agree: "*You must agree to the terms and conditions"
+      },
+      modalRegister: {
+        agree: 'I agree with',
+        rules: 'the terms of use',
+        registerBtn: 'Register',
+      },
+      placeholders:{
+        name: '*Name',
+        email: '*Email',
+        phone:'*Phone',
+        password: '*Password',
+        repeatPassword: '*Repeat password',
+      },
+    }
   },
 };
 

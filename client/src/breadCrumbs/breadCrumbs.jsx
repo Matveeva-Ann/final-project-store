@@ -1,18 +1,20 @@
 // import
 
-import { BreadCrumbsItem, BreadCrumbsItemName, BreadCrumbsLink, BreadCrumbsList } from './breadCrumbs.style';
+import { BreadCrumbsItem, BreadCrumbsItemName, BreadCrumbsLink, BreadCrumbsList, Separator } from './breadCrumbs.style';
 
-export default function BreadCrumbs({ name = '', arrLinks = [] }) {
+export default function BreadCrumbs({ name = '', arrLinks = [], separator }) {
+
   return (
     <>
       <BreadCrumbsList>
         {Array.isArray(arrLinks) &&
           arrLinks.map(elem => {
-            console.log(elem.link);
+            // console.log(elem.link);
             return (
               <BreadCrumbsItem key={elem.name}>
                 <BreadCrumbsLink to={`/${elem.link}`} key={elem}>
                   {elem.name}
+                  <Separator> {separator} </Separator>
                 </BreadCrumbsLink>
               </BreadCrumbsItem>
             );

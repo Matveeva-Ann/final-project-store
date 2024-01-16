@@ -8,8 +8,14 @@ import ModalLogo from "./ModalLogo";
 export default function ModalWrapper({closeModal, children, closeModalReset}){
   const modalRoot = document.querySelector('#modal-root');
   
+  const closeModalOnBG = ({ target, currentTarget }) => {
+   if (target === currentTarget){
+      closeModal ? closeModal() : closeModalReset();
+    } 
+  };
+
   return createPortal(
-    <ModalBg>
+    <ModalBg onClick={(e)=>closeModalOnBG(e)}>
       <ModalBody>
         <ModalLogo></ModalLogo>
         <ModalClose closeModal={closeModal} closeModalReset={closeModalReset}></ModalClose>
